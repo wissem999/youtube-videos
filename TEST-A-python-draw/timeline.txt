@@ -1,0 +1,7 @@
+sentence_id	text	start_time	end_time	image_file
+S001	farming wasn't an invention it was a mistake.	0.27	3.45	1. Farming wasn't an invention it was a mistake..png
+S002	for 300,000 years ancestors walked past wild wheat.	3.45	8.06	2. For 300,000 years ancestors walked past wild wheat..png
+S003	hunter gatherers worked 15 hours a week with real free time.	8.06	12.52	3. Hunter gatherers worked 15 hours a week with real free time..png
+S004	none of this was planned a woman spilled seeds near a campfire.	12.52	16.71	4. None of this was planned a woman spilled seeds near a campfire..png
+S005	your entire world was built on a single accidental spill.	16.71	20.83	5. Your entire world was built on a single accidental spill..png
+S006	and the people who spilled it never even knew.	20.83	22.89	6. And the people who spilled it never even knew..png
