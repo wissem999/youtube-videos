@@ -1,0 +1,3 @@
+sentence_id	text	start_time	end_time	image_file
+S001	wheat field	0.27	3.45	1. wheat field.jpg
+S002	sunset	3.45	8.10	2. sunset.jpg

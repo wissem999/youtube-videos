@@ -1,0 +1,4 @@
+sentence_id	text	start_time	end_time	image_file
+S001	farming wasn't an invention it was a mistake	0.27	3.45	1. Farming wasn't an invention it was a mistake.png
+S002	for 300,000 years ancestors walked past wild wheat	3.45	8.10	2. For 300,000 years ancestors walked past wild wheat.png
+S003	hunter gatherers worked 15 hours a week with real free time	8.10	10.24	3. Hunter gatherers worked 15 hours a week with real free time.png
