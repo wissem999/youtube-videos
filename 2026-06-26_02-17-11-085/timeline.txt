@@ -1,7 +1,0 @@
-sentence_id	text	start_time	end_time	image_file
-S001	farming wasnt an invention it was a mistake	0.27	3.45	1. Farming wasnt an invention it was a mistake.png
-S002	for 300000 years ancestors walked past wild wheat	3.45	8.02	2. For 300000 years ancestors walked past wild wheat.png
-S003	hunter gatherers worked 15 hours a week	8.02	11.38	3. Hunter gatherers worked 15 hours a week.png
-S004	they harvested it ground it ate it and moved on	11.38	15.80	4. They harvested it ground it ate it and moved on.png
-S005	wild grain shatters to scatter but some plants had a mutation	15.80	18.72	5. Wild grain shatters to scatter but some plants had a mutation.png
-S006	your entire world was built on a single accidental spill	18.72	21.80	6. Your entire world was built on a single accidental spill.png
