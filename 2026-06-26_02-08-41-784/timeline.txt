@@ -1,0 +1,7 @@
+sentence_id	text	start_time	end_time	image_file
+S001	school teaches you to follow orders	0.29	3.19	1. School teaches you to follow orders.png
+S002	you sit in rows and raise your hand	3.19	6.10	2. You sit in rows and raise your hand.png
+S003	they tell you what to think not how to think	6.10	9.04	3. They tell you what to think not how to think.png
+S004	the bell controls your day like a prison	9.04	11.96	4. The bell controls your day like a prison.png
+S005	creativity is punished conformity is rewarded	11.96	15.53	5. Creativity is punished conformity is rewarded.png
+S006	by the end you are trained to obey	15.53	17.15	6. By the end you are trained to obey.png

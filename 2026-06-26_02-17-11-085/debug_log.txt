@@ -1,0 +1,29 @@
+============================================================
+ DEBUG LOG
+============================================================
+
+PAUSES:
+  2.37s -> 3.45s (1.08s)
+  7.01s -> 8.02s (1.01s)
+  10.32s -> 11.38s (1.06s)
+  14.74s -> 15.80s (1.06s)
+  17.68s -> 18.72s (1.04s)
+
+GROUPS:
+  1: 0.27s - 2.37s => farming wasn't an invention it was a mistake.
+  2: 3.45s - 7.01s => for 300,000 years ancestors walked past wild wheat.
+  3: 8.02s - 10.32s => they harvested it ground it ate it and moved on.
+  4: 11.38s - 14.74s => wild grain shatters to scatter but some plants had a mutation.
+  5: 15.80s - 17.68s => none of this was planned it was an accident.
+  6: 18.72s - 21.80s => your entire world was built on a single accidental spill.
+
+TIMELINE:
+  S001: 0.27s - 3.45s (3.18s) | 1. Farming wasnt an invention it was a m
+  S002: 3.45s - 8.02s (4.57s) | 2. For 300000 years ancestors walked pas
+  S003: 8.02s - 11.38s (3.36s) | 3. Hunter gatherers worked 15 hours a we
+  S004: 11.38s - 15.80s (4.42s) | 4. They harvested it ground it ate it an
+  S005: 15.80s - 18.72s (2.92s) | 5. Wild grain shatters to scatter but so
+  S006: 18.72s - 21.80s (3.08s) | 6. Your entire world was built on a sing
+
+Segments: 6
+Duration: 21.80s

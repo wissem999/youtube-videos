@@ -1,0 +1,35 @@
+================================================================================
+  IMAGE GENERATION PROMPT TEMPLATE
+================================================================================
+
+FILE NAMING (CRITICAL):
+  1. your exact sentence text.png
+  2. your next sentence.png
+
+  - NUMBER ensures order
+  - DOT + SPACE separates number from text
+  - TEXT must match script EXACTLY (for syncing)
+
+FORMAT PER IMAGE:
+---BEGIN---
+EXACT SCRIPT TEXT (verbatim)
+
+Hand-drawn 2D stick figure animation style, flat white background.
+[scene description - subject, action, minimal environment, centered]
+Black outlines, flat fills, no shading, no gradients.
+---END---
+
+EXAMPLE:
+Your back hurts right now.
+
+Hand-drawn 2D stick figure animation style, flat white background.
+A stick figure holds its lower back showing pain, red highlight on spine,
+minimal brown ground strip, centered composition, flat colors only.
+Black outlines, flat fills, no shading, no gradients.
+
+Maybe it is a dull ache in the lower spine.
+
+Hand-drawn 2D stick figure animation style, flat white background.
+A stick figure gently touches lower back, red pain zone visible,
+white background, brown ground strip, centered framing.
+Black outlines, flat fills, no shading, no gradients.
