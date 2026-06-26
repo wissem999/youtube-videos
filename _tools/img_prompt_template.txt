@@ -1,35 +1,27 @@
-================================================================================
-  IMAGE GENERATION PROMPT TEMPLATE
-================================================================================
+===============================================================================
+  imagesprompts.txt FORMAT
+===============================================================================
 
-FILE NAMING (CRITICAL):
-  1. your exact sentence text.png
-  2. your next sentence.png
+Each image = 2 blocks separated by a blank line:
 
-  - NUMBER ensures order
-  - DOT + SPACE separates number from text
-  - TEXT must match script EXACTLY (for syncing)
+  ORDER NUMBER : EXACT SCRIPT TEXT
 
-FORMAT PER IMAGE:
----BEGIN---
-EXACT SCRIPT TEXT (verbatim)
+  Hand-drawn 2D stick figure animation style, flat white background.
+  [scene description - subject, action, minimal environment, centered]
+  Black outlines, flat fills, no shading, no gradients.
 
-Hand-drawn 2D stick figure animation style, flat white background.
-[scene description - subject, action, minimal environment, centered]
-Black outlines, flat fills, no shading, no gradients.
----END---
+  (blank line before next image)
 
 EXAMPLE:
-Your back hurts right now.
+
+1: Farming is a mistake.
 
 Hand-drawn 2D stick figure animation style, flat white background.
-A stick figure holds its lower back showing pain, red highlight on spine,
-minimal brown ground strip, centered composition, flat colors only.
+A stick figure stands shocked, hands raised, text "A MISTAKE" above.
 Black outlines, flat fills, no shading, no gradients.
 
-Maybe it is a dull ache in the lower spine.
+2: For 300,000 years ancestors walked past wild wheat.
 
 Hand-drawn 2D stick figure animation style, flat white background.
-A stick figure gently touches lower back, red pain zone visible,
-white background, brown ground strip, centered framing.
+A stick figure walks past wheat stalks, sun with rays in corner.
 Black outlines, flat fills, no shading, no gradients.

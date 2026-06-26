@@ -167,7 +167,8 @@ def main():
     print(f"Generating {len(entries)} images from prompts...\n")
 
     for i, (sentence, prompt) in enumerate(entries):
-        safe = re.sub(r'[<>:"/\\|?*]', '', sentence).strip()[:120] or f"image{i+1}"
+        clean = re.sub(r'^\d+[.\-_\s:]*', '', sentence).strip()
+        safe = re.sub(r'[<>:"/\\|?*]', '', clean)[:120] or f"image{i+1}"
         safe = safe.rstrip('. ')
         fname = f"{i+1}. {safe}.png"
 

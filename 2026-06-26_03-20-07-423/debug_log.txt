@@ -1,0 +1,20 @@
+============================================================
+ DEBUG LOG
+============================================================
+
+PAUSES:
+  2.38s -> 3.46s (1.08s)
+  7.02s -> 8.06s (1.04s)
+
+GROUPS:
+  1: 0.27s - 2.38s => farming wasn't an invention it was a mistake.
+  2: 3.46s - 7.02s => for 300,000 years ancestors walked past wild wheat.
+  3: 8.06s - 11.43s => hunter gatherers worked 15 hours a week with real free time.
+
+TIMELINE:
+  S001: 0.27s - 3.46s (3.19s) | 1. Farming wasn't an invention it was a 
+  S002: 3.46s - 8.06s (4.60s) | 2. For 300,000 years ancestors walked pa
+  S003: 8.06s - 11.43s (3.37s) | 3. Hunter gatherers worked 15 hours a we
+
+Segments: 3
+Duration: 11.43s
