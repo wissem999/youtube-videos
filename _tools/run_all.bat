@@ -2,7 +2,7 @@
 chcp 65001 >nul
 title FULL PIPELINE
 echo ============================================
-echo  FULL PIPELINE: Audio ^> Transcribe ^> Match ^> Render
+echo  FULL PIPELINE: Audio ^> Transcribe ^> Images ^> Match ^> Render
 echo  %cd%
 echo ============================================
 echo.
@@ -11,14 +11,6 @@ if not exist "script.txt" (
     echo ERROR: script.txt not found!
     pause & exit /b 1
 )
-
-set IMG_COUNT=0
-for %%f in (img\*.png img\*.jpg img\*.jpeg img\*.webp) do set /a IMG_COUNT+=1
-if %IMG_COUNT% equ 0 (
-    echo ERROR: No images in img/ folder!
-    pause & exit /b 1
-)
-echo Found %IMG_COUNT% images.
 
 set "TBAT=%~dp0"
 
@@ -36,6 +28,14 @@ echo ===== STEP 2/4: Transcribe =====
 call "%TBAT%transcribe.bat"
 if not exist transcript_words.txt (
     echo FAILED at Step 2 & pause & exit /b 1
+)
+
+echo.
+echo ===== STEP 2b/4: Ensure Images =====
+call "%TBAT%ensure_images.bat"
+if errorlevel 1 (
+    echo FAILED at Step 2b: No images available.
+    pause & exit /b 1
 )
 
 echo.
