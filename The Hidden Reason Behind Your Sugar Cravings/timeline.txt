@@ -1,0 +1,88 @@
+sentence_id	text	start_time	end_time	image_file
+S001	Right now, something inside you wants sugar.	0.00	3.79	1. Right now, something inside you wants sugar..png
+S002	Maybe it's been a long day.	3.79	6.15	2. Maybe it's been a long day..png
+S003	Maybe someone said something that hurt, or maybe nothing happened at all and the sadness just arrived on its own.	6.15	12.84	3. Maybe someone said something that hurt, or maybe nothing happened at all and the sadness just arrived on its own..png
+S004	You open the cabinet.	12.84	14.94	4. You open the cabinet..png
+S005	You stand in front of the vending machine at work, the blue light buzzing over rows of chocolate and gum.	14.94	20.98	5. You stand in front of the vending machine at work, the blue light buzzing over rows of chocolate and gum..png
+S006	Your hand reaches before your mind decides anything.	20.98	24.68	6. Your hand reaches before your mind decides anything..png
+S007	This is not a flaw.	24.68	26.74	7. This is not a flaw..png
+S008	This is not weakness.	26.74	28.94	8. This is not weakness..png
+S009	This is a system inside your brain that is several hundred thousand years older than the vending machine itself, and it is doing exactly what it was built to do.	28.94	37.58	9. This is a system inside your brain that is several hundred thousand years older than the vending machine itself, and it is doing exactly what it was built to do..png
+S010	Here is the strange part.	37.58	39.84	10. Here is the strange part..png
+S011	Sugar itself is not particularly nutritious.	39.84	43.39	11. Sugar itself is not particularly nutritious..png
+S012	It has almost no protein, no fat, none of the building blocks your body actually needs to repair itself.	43.39	50.31	12. It has almost no protein, no fat, none of the building blocks your body actually needs to repair itself..png
+S013	And yet, when you are anxious, grieving, exhausted, or simply low, your brain does not reach for protein.	50.31	57.96	13. And yet, when you are anxious, grieving, exhausted, or simply low, your brain does not reach for protein..png
+S014	It reaches for sweetness.	57.96	60.34	14. It reaches for sweetness..png
+S015	Why would a system shaped by millions of years of survival pressure prioritize something so nutritionally empty at the exact moment your body should be asking for repair_	60.34	69.81	15. Why would a system shaped by millions of years of survival pressure prioritize something so nutritionally empty at the exact moment your body should be asking for repair_.png
+S016	The answer is not really about food.	69.81	71.37	16. The answer is not really about food..png
+S017	It is about a season that ended roughly twelve thousand years ago, and a signal your brain has never stopped listening for.	71.37	78.60	17. It is about a season that ended roughly twelve thousand years ago, and a signal your brain has never stopped listening for..png
+S018	Before there were vending machines, before there was agriculture, before there was anything resembling a kitchen, there was a single, narrow window each year when the most valua	78.60	95.71	18. Before there were vending machines, before there was agriculture, before there was anything resembling a kitchen, there was a single, narrow window each year when the most valua.png
+S019	What happened inside that window rewired something in the human brain that has not changed since — and it explains, with uncomfortable precision, why grief and a candy bar ended	95.71	107.95	19. What happened inside that window rewired something in the human brain that has not changed since — and it explains, with uncomfortable precision, why grief and a candy bar ended.png
+S020	But that is only half the story.	107.95	110.63	20. But that is only half the story..png
+S021	Around fifty million years ago, the ancestors of modern primates evolved something unusual_ full color vision.	110.63	118.21	21. Around fifty million years ago, the ancestors of modern primates evolved something unusual_ full color vision..png
+S022	In 1996, biologist gerald jacobs at the university of california, santa barbara, traced this shift directly back to fruit.	118.21	127.28	22. In 1996, biologist Gerald Jacobs at the University of California, Santa Barbara, traced this shift directly back to fruit..png
+S023	Most mammals see only a narrow range of blues and yellows.	127.28	131.61	23. Most mammals see only a narrow range of blues and yellows..png
+S024	Primates gained the ability to see red and orange clearly — the exact colors of ripening fruit against green leaves.	131.61	138.99	24. Primates gained the ability to see red and orange clearly — the exact colors of ripening fruit against green leaves..png
+S025	This was not decorative.	138.99	141.21	25. This was not decorative..png
+S026	It was a targeting system, built so the eye could find the few days each fruit was edible before it rotted or vanished.	141.21	148.19	26. It was a targeting system, built so the eye could find the few days each fruit was edible before it rotted or vanished..png
+S027	Ripeness, in other words, was a deadline.	148.19	150.24	27. Ripeness, in other words, was a deadline..png
+S028	Unripe fruit is often bitter, sometimes toxic, defended chemically by the plant itself.	150.24	156.52	28. Unripe fruit is often bitter, sometimes toxic, defended chemically by the plant itself..png
+S029	Ripe fruit is a brief truce — sugar spiking for a few days as a reward for spreading the plant's seeds.	156.52	164.85	29. Ripe fruit is a brief truce — sugar spiking for a few days as a reward for spreading the plant's seeds..png
+S030	Miss that window and the calories are gone, eaten by something else or rotting on the ground.	164.85	170.44	30. Miss that window and the calories are gone, eaten by something else or rotting on the ground..png
+S031	This single fact shaped something deeper than eyesight.	170.44	174.70	31. This single fact shaped something deeper than eyesight..png
+S032	In 2014, anthropologist nathaniel dominy at dartmouth college proposed that the entire reward circuit tied to sweetness in primates evolved around scarcity, not abundance.	174.70	185.37	32. In 2014, anthropologist Nathaniel Dominy at Dartmouth College proposed that the entire reward circuit tied to sweetness in primates evolved around scarcity, not abundance..png
+S033	Sweet never meant _treat._	185.37	187.83	33. Sweet never meant _treat._.png
+S034	Sweet meant the window is open, take it now, it will not last.	187.83	192.59	34. Sweet meant the window is open, take it now, it will not last..png
+S035	The brain that hesitated lost the calories.	192.59	195.91	35. The brain that hesitated lost the calories..png
+S036	The brain that grabbed immediately survived the season that followed.	195.91	200.18	36. The brain that grabbed immediately survived the season that followed..png
+S037	That urgency had to be stored somewhere.	200.18	203.20	37. That urgency had to be stored somewhere..png
+S038	It landed in dopamine — the chemical responsible not for pleasure itself, but for the drive toward something before you have it.	203.20	210.89	38. It landed in dopamine — the chemical responsible not for pleasure itself, but for the drive toward something before you have it..png
+S039	In 1996, princeton researcher bartley hoebel found that rats given intermittent access to sugar developed dopamine surges nearly identical to those seen in addiction models, the	210.89	225.65	39. In 1996, Princeton researcher Bartley Hoebel found that rats given intermittent access to sugar developed dopamine surges nearly identical to those seen in addiction models, the.png
+S040	Now add stress to the system.	225.65	228.28	40. Now add stress to the system..png
+S041	In 2003, physiologist mary dallman at the university of california, san francisco, published research showing that comfort foods — sugar and fat specifically — measurably reduce	228.28	242.73	41. In 2003, physiologist Mary Dallman at the University of California, San Francisco, published research showing that comfort foods — sugar and fat specifically — measurably reduce.png
+S042	Cortisol dropped.	242.73	244.71	42. Cortisol dropped..png
+S043	The animals didn't even need to be hungry.	244.71	247.69	43. The animals didn't even need to be hungry..png
+S044	The craving was never really about energy.	247.69	250.84	44. The craving was never really about energy..png
+S045	It was the brain trying to shut off an alarm using the oldest tool it had.	250.84	255.51	45. It was the brain trying to shut off an alarm using the oldest tool it had..png
+S046	Among hunter-gatherer groups studied directly, the pattern holds.	255.51	260.04	46. Among hunter-gatherer groups studied directly, the pattern holds..png
+S047	Anthropologist alyssa crittenden, working with the hadza of tanzania beginning in the early 2000s, documented that honey and ripe fruit were the most desired, most fought-over f	260.04	277.94	47. Anthropologist Alyssa Crittenden, working with the Hadza of Tanzania beginning in the early 2000s, documented that honey and ripe fruit were the most desired, most fought-over f.png
+S048	Sweetness was never something to manage carefully.	277.94	281.30	48. Sweetness was never something to manage carefully..png
+S049	It was something to seize the moment it appeared, because the moment never lasted.	281.30	286.18	49. It was something to seize the moment it appeared, because the moment never lasted..png
+S050	This explains why the contrast matters so much today.	286.18	290.14	50. This explains why the contrast matters so much today..png
+S051	A wild fig studied by botanists rarely tests above six to eight percent sugar.	290.14	295.83	51. A wild fig studied by botanists rarely tests above six to eight percent sugar..png
+S052	A modern supermarket grape, bred over centuries for exactly this craving, regularly tests above twenty percent.	295.83	303.27	52. A modern supermarket grape, bred over centuries for exactly this craving, regularly tests above twenty percent..png
+S053	The plant did not change on its own.	303.27	306.12	53. The plant did not change on its own..png
+S054	For thousands of years, humans kept selecting the sweetest fruit available and replanting its seeds, slowly turning a rare seasonal reward into something closer to constant — lo	306.12	316.92	54. For thousands of years, humans kept selecting the sweetest fruit available and replanting its seeds, slowly turning a rare seasonal reward into something closer to constant — lo.png
+S055	For roughly two hundred thousand years, this system worked exactly as designed — a rare signal, tightly tied to a real and narrow season of abundance before winter scarcity.	316.92	329.43	55. For roughly two hundred thousand years, this system worked exactly as designed — a rare signal, tightly tied to a real and narrow season of abundance before winter scarcity..png
+S056	There was no daily access.	329.43	332.00	56. There was no daily access..png
+S057	There was no constant supply.	332.00	334.56	57. There was no constant supply..png
+S058	The circuit assumed scarcity as a permanent condition.	334.56	338.31	58. The circuit assumed scarcity as a permanent condition..png
+S059	That assumption held all the way until something happened that the circuit was never built to survive.	338.31	343.93	59. That assumption held all the way until something happened that the circuit was never built to survive..png
+S060	But here is the dark turn.	343.93	346.31	60. But here is the dark turn..png
+S061	In the early 1980s, executives inside the american food industry began deliberately engineering products around what researchers called the _bliss point_ — the precise concentra	346.31	362.00	61. In the early 1980s, executives inside the American food industry began deliberately engineering products around what researchers called the _bliss point_ — the precise concentra.png
+S062	Food scientist howard moskowitz, consulting across the industry through the 1980s and 90s, mathematically modeled that point for products ranging from soda to salad dressing, op	362.00	379.60	62. Food scientist Howard Moskowitz, consulting across the industry through the 1980s and 90s, mathematically modeled that point for products ranging from soda to salad dressing, op.png
+S063	This means the urgency you feel standing in front of a vending machine after a bad day is not a coincidence, and not a personal failing.	379.60	387.78	63. This means the urgency you feel standing in front of a vending machine after a bad day is not a coincidence, and not a personal failing..png
+S064	It is a precision-engineered echo of a starvation-season alarm, tuned by people who understood the ancient circuit better than you do, sitting fully exposed in a fluorescent hal	387.78	403.14	64. It is a precision-engineered echo of a starvation-season alarm, tuned by people who understood the ancient circuit better than you do, sitting fully exposed in a fluorescent hal.png
+S065	And grief makes it worse.	403.14	405.64	65. And grief makes it worse..png
+S066	Sadness, like physical threat, raises cortisol.	405.64	409.85	66. Sadness, like physical threat, raises cortisol..png
+S067	Your ancient system reads rising cortisol the same way whether the cause is a predator or a phone call you didn't want to receive.	409.85	417.39	67. Your ancient system reads rising cortisol the same way whether the cause is a predator or a phone call you didn't want to receive..png
+S068	It does not distinguish between danger and heartbreak.	417.39	421.12	68. It does not distinguish between danger and heartbreak..png
+S069	It simply activates the oldest shutoff switch it has ever owned_ sweetness, urgency, take it now.	421.12	427.94	69. It simply activates the oldest shutoff switch it has ever owned_ sweetness, urgency, take it now..png
+S070	The candy bar was never really about hunger.	427.94	431.28	70. The candy bar was never really about hunger..png
+S071	It was about silencing an alarm that has been ringing, in one form or another, for two hundred thousand years.	431.28	438.23	71. It was about silencing an alarm that has been ringing, in one form or another, for two hundred thousand years..png
+S072	Step back far enough and the picture changes.	438.23	441.61	72. Step back far enough and the picture changes..png
+S073	This was never really a story about willpower, or sugar, or even food.	441.61	445.53	73. This was never really a story about willpower, or sugar, or even food..png
+S074	It was a story about a brain built for a world with one narrow window of safety each year, now living inside a world that manufactured that window and left it open permanently.	445.53	456.76	74. It was a story about a brain built for a world with one narrow window of safety each year, now living inside a world that manufactured that window and left it open permanently..png
+S075	Every aisle of a grocery store is, in a sense, a frozen ripening season, engineered never to end, reachable at three in the morning if you want it.	456.76	466.05	75. Every aisle of a grocery store is, in a sense, a frozen ripening season, engineered never to end, reachable at three in the morning if you want it..png
+S076	Your body still runs the original program.	466.05	469.24	76. Your body still runs the original program..png
+S077	When you feel low, when something hurts, when the day has taken more than it gave back, the same circuit that once sent your ancestors running toward a fig tree before winter se	469.24	481.37	77. When you feel low, when something hurts, when the day has taken more than it gave back, the same circuit that once sent your ancestors running toward a fig tree before winter se.png
+S078	You are not broken when this happens.	481.37	482.69	78. You are not broken when this happens..png
+S079	You are simply old in a way no calendar can measure.	482.69	487.93	79. You are simply old in a way no calendar can measure..png
+S080	The branch changed.	487.93	490.01	80. The branch changed..png
+S081	The vending machine changed.	490.01	492.49	81. The vending machine changed..png
+S082	The grief is real, and modern, and entirely yours.	492.49	496.70	82. The grief is real, and modern, and entirely yours..png
+S083	But the response underneath it is the same one a primate used fifty million years ago, in a forest none of us will ever see, trying to outlast a season that no longer exists.	496.70	507.23	83. But the response underneath it is the same one a primate used fifty million years ago, in a forest none of us will ever see, trying to outlast a season that no longer exists..png
+S084	So the next time your hand reaches for something sweet on a hard day, you will know what is actually happening.	507.23	513.41	84. So the next time your hand reaches for something sweet on a hard day, you will know what is actually happening..png
+S085	It is not weakness reaching for the chocolate bar.	513.41	515.03	85. It is not weakness reaching for the chocolate bar..png
+S086	It is two hundred thousand years of survival, mistaking a fluorescent hallway for the last safe branch before winter.	515.03	523.67	86. It is two hundred thousand years of survival, mistaking a fluorescent hallway for the last safe branch before winter..png
+S087	Tonight, when the sadness comes and your hand moves toward the cabinet without asking permission, you will feel it again — that old, wordless urgency, still convinced that this	523.67	536.97	87. Tonight, when the sadness comes and your hand moves toward the cabinet without asking permission, you will feel it again — that old, wordless urgency, still convinced that this .png

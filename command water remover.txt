@@ -1,0 +1,1 @@
+& "C:\opencode\watermark-remover\venv\Scripts\python.exe" -m iopaint start --port=8000 --model=lama --device=cpu

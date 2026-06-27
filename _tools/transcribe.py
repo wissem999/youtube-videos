@@ -4,6 +4,7 @@ FFMPEG_PATHS = [
     r"C:\Program Files\Shutter Encoder\Library",
     r"C:\ffmpeg\bin",
     r"C:\Program Files\ffmpeg\bin",
+    r"C:\Users\LITE\AppData\Local\Programs\Python\Python313",
 ]
 for p in FFMPEG_PATHS:
     if os.path.isdir(p) and p not in os.environ.get("PATH", ""):

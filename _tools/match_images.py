@@ -1,11 +1,14 @@
-import os, re, sys
+import os, re, sys, subprocess
 
 IMG_FOLDER = os.path.join(os.getcwd(), "img")
 TRANSCRIPT_FILE = os.path.join(os.getcwd(), "transcript_words.txt")
 SCRIPT_FILE = os.path.join(os.getcwd(), "script.txt")
 OUTPUT_FILE = os.path.join(os.getcwd(), "timeline.txt")
 DEBUG_FILE = os.path.join(os.getcwd(), "debug_log.txt")
-PAUSE_THRESHOLD = 0.4
+
+
+def n(w):
+    return re.sub(r"[^a-z0-9]", "", w.lower())
 
 
 def load_transcript(filepath):
@@ -22,13 +25,6 @@ def load_transcript(filepath):
             w, s, e = parts
             words.append({"word": w.strip().lower(), "start": float(s), "end": float(e)})
     return words
-
-
-def load_script_sentences(filepath):
-    if not os.path.exists(filepath):
-        return []
-    with open(filepath, "r", encoding="utf-8") as f:
-        return [l.strip() for l in f if l.strip()]
 
 
 def load_images(folder):
@@ -50,77 +46,6 @@ def parse_image_name(fname):
     return 999, name.lower(), fname
 
 
-def normalize(t):
-    return re.sub(r"[^\w\s]", "", t).strip()
-
-
-def group_words_by_pause(transcript_words):
-    groups = []
-    current = []
-    for w in transcript_words:
-        if not current:
-            current.append(w)
-        else:
-            gap = w["start"] - current[-1]["end"]
-            if gap > PAUSE_THRESHOLD:
-                groups.append(current)
-                current = [w]
-            else:
-                current.append(w)
-    if current:
-        groups.append(current)
-    return groups
-
-
-def assign_images_to_groups(groups, parsed_images):
-    timeline = []
-    n_groups = len(groups)
-    n_images = len(parsed_images)
-    for i, group in enumerate(groups):
-        if i < n_images:
-            num, text, fname = parsed_images[i]
-        else:
-            _, _, fname = parsed_images[-1]
-            num = i + 1
-            text = " ".join(w["word"] for w in group)
-        start_time = group[0]["start"]
-        if i + 1 < n_groups:
-            end_time = groups[i + 1][0]["start"]
-        else:
-            end_time = group[-1]["end"]
-        timeline.append({
-            "sentence_id": f"S{num:03d}",
-            "text": text,
-            "start_time": start_time,
-            "end_time": end_time,
-            "image_file": fname
-        })
-    for i in range(n_groups, n_images):
-        num, text, fname = parsed_images[i]
-        start = timeline[-1]["end_time"] if timeline else 0
-        timeline.append({
-            "sentence_id": f"S{num:03d}",
-            "text": text,
-            "start_time": start,
-            "end_time": start + 2.0,
-            "image_file": fname
-        })
-    return timeline
-
-
-def distribute_evenly(parsed_images, audio_duration):
-    if not parsed_images or audio_duration <= 0:
-        return []
-    chunk = audio_duration / len(parsed_images)
-    return [{
-        "sentence_id": f"S{num:03d}",
-        "text": text,
-        "start_time": i * chunk,
-        "end_time": (i + 1) * chunk,
-        "image_file": fname
-    } for i, (num, text, fname) in enumerate(parsed_images)]
-
-
 def get_audio_duration():
     FFMPEG_PATHS = [
         r"C:\Program Files\Shutter Encoder\Library",
@@ -129,7 +54,6 @@ def get_audio_duration():
         os.path.join(os.path.dirname(sys.executable)),
         os.path.join(os.path.dirname(sys.executable), "Scripts"),
     ]
-    import subprocess
     for p in FFMPEG_PATHS:
         if os.path.isdir(p) and p not in os.environ.get("PATH", ""):
             os.environ["PATH"] = p + os.pathsep + os.environ.get("PATH", "")
@@ -157,7 +81,6 @@ def get_audio_duration():
                 )
                 for line in r.stderr.split("\n"):
                     if "time=" in line:
-                        import re
                         m = re.search(r"time=(\d+):(\d+):(\d+\.\d+)", line)
                         if m:
                             h, m_, s = float(m.group(1)), float(m.group(2)), float(m.group(3))
@@ -171,6 +94,80 @@ def get_audio_duration():
     return 60.0
 
 
+def score_match(sentence_words, transcript_words, pos):
+    if pos >= len(transcript_words):
+        return -1
+    check_len = min(len(sentence_words), len(transcript_words) - pos)
+    if check_len <= 0:
+        return -1
+    score = 0
+    for i in range(check_len):
+        sw = sentence_words[i]
+        tw = n(transcript_words[pos + i]["word"])
+        if sw == tw:
+            score += 1
+        elif i == len(sentence_words) - 1 and (tw.startswith(sw) or sw.startswith(tw)):
+            score += 0.8
+    return score
+
+
+def find_best_position(sentence_words, transcript_words, search_start, search_end):
+    if not sentence_words or search_start >= len(transcript_words):
+        return max(0, min(search_start, len(transcript_words) - 1)), -1
+    search_end = min(search_end, len(transcript_words))
+    best_pos = search_start
+    best_score = -1
+
+    for pos in range(search_start, search_end):
+        score = score_match(sentence_words, transcript_words, pos)
+        if score > best_score:
+            best_score = score
+            best_pos = pos
+
+    return best_pos, best_score
+
+
+def match_sentences(parsed_images, transcript_words):
+    n_images = len(parsed_images)
+    n_words = len(transcript_words)
+    positions = [0] * n_images
+    scores = [0] * n_images
+
+    s0 = [n(w) for w in parsed_images[0][1].split() if n(w)]
+    if not s0:
+        s0 = ["x"]
+    bp, bs = find_best_position(s0, transcript_words, 0, min(n_words, 100))
+    positions[0] = bp
+    scores[0] = bs
+
+    for i in range(1, n_images):
+        prev_end = positions[i - 1] + len([n(w) for w in parsed_images[i - 1][1].split() if n(w)])
+        s_words = [n(w) for w in parsed_images[i][1].split() if n(w)]
+        if not s_words:
+            s_words = ["x"]
+
+        margin = 50
+        search_start = max(0, prev_end - 20)
+        search_end = min(n_words, prev_end + margin + 1)
+        bp, bs = find_best_position(s_words, transcript_words, search_start, search_end)
+
+        if bp <= positions[i - 1]:
+            bp = positions[i - 1] + 1
+        if bs < 1:
+            margin2 = 200
+            search_end2 = min(n_words, prev_end + margin2 + 1)
+            bp2, bs2 = find_best_position(s_words, transcript_words, search_start, search_end2)
+            if bs2 > bs:
+                bp, bs = bp2, bs2
+
+        bp = min(bp, n_words - 1)
+
+        positions[i] = bp
+        scores[i] = bs
+
+    return positions, scores
+
+
 def write_timeline(timeline, filepath):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("sentence_id\ttext\tstart_time\tend_time\timage_file\n")
@@ -178,22 +175,24 @@ def write_timeline(timeline, filepath):
             f.write(f"{e['sentence_id']}\t{e['text']}\t{e['start_time']:.2f}\t{e['end_time']:.2f}\t{e['image_file']}\n")
 
 
-def write_debug_log(timeline, transcript_words, groups):
+def write_debug_log(timeline, transcript_words, positions, scores):
     with open(DEBUG_FILE, "w", encoding="utf-8") as f:
         f.write("=" * 60 + "\n DEBUG LOG\n" + "=" * 60 + "\n\n")
-        f.write("PAUSES:\n")
-        for i in range(len(transcript_words) - 1):
-            gap = transcript_words[i + 1]["start"] - transcript_words[i]["end"]
-            if gap > PAUSE_THRESHOLD:
-                f.write(f"  {transcript_words[i]['end']:.2f}s -> {transcript_words[i+1]['start']:.2f}s ({gap:.2f}s)\n")
-        f.write("\nGROUPS:\n")
-        for i, g in enumerate(groups):
-            txt = " ".join(w["word"] for w in g)
-            f.write(f"  {i+1}: {g[0]['start']:.2f}s - {g[-1]['end']:.2f}s => {txt}\n")
+        f.write("MATCH POSITIONS:\n")
+        for e in timeline:
+            pass
+        f.write("\nPER-IMAGE MATCH:\n")
+        for i, e in enumerate(timeline):
+            num = int(e["sentence_id"][1:])
+            pos = positions[i] if i < len(positions) else 0
+            sc = scores[i] if i < len(scores) else 0
+            f.write(f"  S{num:03d}: pos={pos:4d} score={sc:5.1f} start={e['start_time']:.2f}s | {e['image_file'][:40]}\n")
+
         f.write("\nTIMELINE:\n")
         for e in timeline:
             d = e["end_time"] - e["start_time"]
             f.write(f"  {e['sentence_id']}: {e['start_time']:.2f}s - {e['end_time']:.2f}s ({d:.2f}s) | {e['image_file'][:40]}\n")
+
         f.write(f"\nSegments: {len(timeline)}\n")
         if timeline:
             f.write(f"Duration: {timeline[-1]['end_time']:.2f}s\n")
@@ -205,7 +204,7 @@ def main():
     print("=" * 50 + "\n")
 
     if not os.path.exists(TRANSCRIPT_FILE):
-        print(f"ERROR: '{TRANSCRIPT_FILE}' not found. Run transcribe.bat first.")
+        print(f"ERROR: '{TRANSCRIPT_FILE}' not found.")
         sys.exit(1)
 
     transcript = load_transcript(TRANSCRIPT_FILE)
@@ -216,36 +215,61 @@ def main():
 
     parsed = [parse_image_name(img) for img in images]
     parsed.sort(key=lambda x: x[0])
+    print(f"Parsed {len(parsed)} images (sorted)")
 
-    script_sentences = load_script_sentences(SCRIPT_FILE)
-    if script_sentences:
-        print(f"Script:     {len(script_sentences)} lines")
+    print(f"\nMatching sentences to transcript positions...")
+    positions, scores = match_sentences(parsed, transcript)
 
-    print(f"\nDetecting sentences by pause (>={PAUSE_THRESHOLD}s)...")
-    groups = group_words_by_pause(transcript)
-    print(f"Found {len(groups)} sentence groups")
+    nz = sum(1 for s in scores if s > 0)
+    print(f"Match scores: min={min(scores):.1f}, max={max(scores):.1f}, avg={sum(scores)/len(scores):.1f}, nonzero={nz}/{len(scores)}")
+
+    audio_dur = get_audio_duration()
 
     timeline = []
-    if groups and parsed:
-        print(f"Assigning {len(parsed)} images to {len(groups)} groups...")
-        timeline = assign_images_to_groups(groups, parsed)
-    else:
-        print("FALLBACK: even distribution")
-        timeline = distribute_evenly(parsed, get_audio_duration())
+    for i, (num, text, fname) in enumerate(parsed):
+        start_time = transcript[positions[i]]["start"]
+        if i + 1 < len(parsed):
+            np = positions[i + 1]
+            if np <= positions[i]:
+                np = positions[i] + 1
+            end_time = transcript[min(np, len(transcript) - 1)]["start"]
+        else:
+            end_time = audio_dur
 
-    if not timeline:
-        print("ERROR: No timeline segments!")
-        sys.exit(1)
+        if start_time >= audio_dur:
+            start_time = audio_dur
+            end_time = audio_dur
+        else:
+            if end_time > audio_dur:
+                end_time = audio_dur
+            if end_time <= start_time:
+                end_time = min(start_time + 1.5, audio_dur)
+
+        timeline.append({
+            "sentence_id": f"S{num:03d}",
+            "text": text[0].upper() + text[1:] if text else text,
+            "start_time": start_time,
+            "end_time": end_time,
+            "image_file": fname
+        })
+
+    if timeline:
+        timeline[0]["start_time"] = 0.0
 
     write_timeline(timeline, OUTPUT_FILE)
-    write_debug_log(timeline, transcript, groups)
+    write_debug_log(timeline, transcript, positions, scores)
 
     print(f"\n{'='*50}")
     print(" FINAL TIMELINE")
     print(f"{'='*50}")
-    for e in timeline:
+    for e in timeline[:10]:
         d = e["end_time"] - e["start_time"]
         print(f"  {e['sentence_id']} | {e['start_time']:6.2f}s -> {e['end_time']:6.2f}s ({d:.2f}s) | {e['image_file']}")
+    if len(timeline) > 10:
+        print(f"  ... ({len(timeline) - 10} more)")
+        for e in timeline[-3:]:
+            d = e["end_time"] - e["start_time"]
+            print(f"  {e['sentence_id']} | {e['start_time']:6.2f}s -> {e['end_time']:6.2f}s ({d:.2f}s) | {e['image_file']}")
 
     print(f"\nSegments: {len(timeline)}")
     if timeline:

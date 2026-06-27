@@ -50,14 +50,19 @@ if not exist timeline.txt (
 )
 
 echo.
-echo ===== STEP 6/6: Render Video =====
+echo ===== STEP 6/7: Render Video =====
 call "%TBAT%render.bat"
-
-if exist output.mp4 (
-    echo.
-    echo ============================================
-    echo  PIPELINE COMPLETE!
-    echo  Output: %cd%\output.mp4
-    echo ============================================
+if not exist output.mp4 (
+    echo FAILED at Step 6 & pause & exit /b 1
 )
+
+echo.
+echo ===== STEP 7/7: Add Outro =====
+call "%TBAT%add_outro.bat"
+
+echo.
+echo ============================================
+echo  PIPELINE COMPLETE!
+echo  Output: %cd%\output.mp4
+echo ============================================
 pause

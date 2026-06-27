@@ -12,11 +12,20 @@ mkdir "%PROJECT%" 2>nul
 copy nul "%PROJECT%\script.txt" >nul
 copy nul "%PROJECT%\imagesprompts.txt" >nul
 mkdir "%PROJECT%\img-with-watermark" 2>nul
+mkdir "%PROJECT%\thumbnails" 2>nul
 
 set "TOOLS=%~dp0_tools"
 
 :: Create local batch files in project folder
-set "LOCAL_BATS=generate_audio.bat transcribe.bat remove_watermark.bat ensure_images.bat match_images.bat render.bat run_all.bat"
+set "LOCAL_BATS=generate_audio.bat transcribe.bat remove_watermark.bat ensure_images.bat match_images.bat render.bat run_all.bat add_outro.bat"
+
+:: Create remove_watermark.bat inside thumbnails
+(
+    echo @echo off
+    echo chcp 65001 ^>nul
+    echo cd /d "%%~dp0"
+    echo call "%TOOLS%\remove_thumbnails_watermark.bat"
+) > "%PROJECT%\thumbnails\remove_watermark.bat"
 for %%b in (%LOCAL_BATS%) do (
     copy nul "%PROJECT%\%%b" >nul
     (
@@ -37,14 +46,17 @@ echo.
 echo  Files:
 echo    script.txt         - Write your script here
 echo    imagesprompts.txt  - Write image prompts here (one per line, for auto-draw)
-echo    img-with-watermark\ - Put watermarked images here (1. title.png, ...)
-echo    generate_audio.bat  - Step 1: Generate MP3 from script
-echo    transcribe.bat      - Step 2: Transcribe words + timings
+echo    img-with-watermark\  - Put watermarked images here (1. title.png, ...)
+echo    thumbnails\          - Put watermarked thumbnails here
+echo    thumbnails\remove_watermark.bat - Clean thumbnail watermarks
+echo    generate_audio.bat   - Step 1: Generate MP3 from script
+echo    transcribe.bat       - Step 2: Transcribe words + timings
 echo    remove_watermark.bat - Step 2b: Auto-remove watermarks from images
-echo    ensure_images.bat   - Step 2c: Auto-gen images if none exist
-echo    match_images.bat    - Step 3: Match images to transcript
-echo    render.bat          - Step 4: Render final MP4
-echo    run_all.bat         - Do everything at once
+echo    ensure_images.bat    - Step 2c: Auto-gen images if none exist
+echo    match_images.bat     - Step 3: Match images to transcript
+echo    render.bat           - Step 4: Render final MP4
+echo    run_all.bat          - Do everything at once
+echo    add_outro.bat        - Step 5: Append outro to output.mp4
 echo.
 echo  Image naming: 1. your sentence.png
 echo.

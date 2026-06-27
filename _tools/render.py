@@ -6,6 +6,7 @@ FFMPEG_PATHS = [
     r"C:\Program Files\ffmpeg\bin",
     os.path.join(os.path.dirname(sys.executable)),
     os.path.join(os.path.dirname(sys.executable), "Scripts"),
+    r"C:\Users\LITE\AppData\Local\Programs\Python\Python313",
 ]
 for p in FFMPEG_PATHS:
     if os.path.isdir(p) and p not in os.environ.get("PATH", ""):
@@ -53,6 +54,15 @@ def find_image_path(fname):
         if os.path.exists(p2):
             return p2
     return None
+
+
+def pad_first_segment(segments):
+    if not segments or segments[0]["start"] <= 0:
+        return segments
+    pad = {"id": "PAD", "text": "", "start": 0.0,
+           "end": segments[0]["start"],
+           "duration": segments[0]["start"], "image": segments[0]["image"]}
+    return [pad] + segments
 
 
 def make_segment_videos(segments):
@@ -116,20 +126,14 @@ def concat_videos(seg_files, audio_file, output_file):
 
 def get_video_duration(filepath):
     r = subprocess.run(
-        ["ffmpeg", "-i", filepath, "-f", "null", "-",
-         "-loglevel", "error", "-stats"],
+        ["ffmpeg", "-i", filepath],
         capture_output=True, text=True
     )
-    try:
-        for line in r.stderr.split("\n"):
-            if "time=" in line:
-                import re
-                m = re.search(r"time=(\d+):(\d+):(\d+\.\d+)", line)
-                if m:
-                    h, m_, s = float(m.group(1)), float(m.group(2)), float(m.group(3))
-                    return h * 3600 + m_ * 60 + s
-    except:
-        pass
+    import re
+    m = re.search(r"Duration:\s*(\d+):(\d+):(\d+\.\d+)", r.stderr)
+    if m:
+        h, m_, s = float(m.group(1)), float(m.group(2)), float(m.group(3))
+        return h * 3600 + m_ * 60 + s
     return 0.0
 
 
@@ -165,6 +169,9 @@ def main():
         print(f"WARNING: {missing} images missing, placeholders used")
     else:
         print("All images found!")
+
+    segments = pad_first_segment(segments)
+    print(f"After padding: {len(segments)} segments (start at {segments[0]['start']}s)")
 
     print("\nRendering segments...")
     seg_files = make_segment_videos(segments)

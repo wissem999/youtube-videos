@@ -1,0 +1,404 @@
+============================================================
+ DEBUG LOG
+============================================================
+
+PAUSES:
+  3.05s -> 4.15s (1.10s)
+  5.15s -> 6.21s (1.06s)
+  7.02s -> 8.12s (1.10s)
+  9.50s -> 9.90s (0.40s)
+  12.54s -> 13.56s (1.02s)
+  14.52s -> 15.54s (1.02s)
+  20.32s -> 21.39s (1.07s)
+  24.09s -> 25.11s (1.02s)
+  26.27s -> 27.27s (1.00s)
+  30.91s -> 31.91s (1.00s)
+  37.03s -> 38.11s (1.08s)
+  40.39s -> 41.43s (1.04s)
+  42.51s -> 43.63s (1.12s)
+  44.87s -> 45.27s (0.40s)
+  51.02s -> 52.16s (1.14s)
+  56.52s -> 57.55s (1.03s)
+  60.07s -> 61.17s (1.10s)
+  69.61s -> 70.67s (1.06s)
+  71.57s -> 72.59s (1.02s)
+  76.15s -> 77.21s (1.06s)
+  81.07s -> 82.11s (1.04s)
+  85.17s -> 86.22s (1.05s)
+  88.54s -> 89.58s (1.04s)
+  93.80s -> 94.80s (1.00s)
+  97.24s -> 98.36s (1.12s)
+  99.66s -> 100.70s (1.04s)
+  103.63s -> 104.69s (1.06s)
+  113.27s -> 113.73s (0.46s)
+  118.32s -> 119.30s (0.98s)
+  124.72s -> 125.84s (1.12s)
+  127.66s -> 128.75s (1.09s)
+  129.43s -> 130.51s (1.08s)
+  131.03s -> 132.08s (1.05s)
+  134.86s -> 135.90s (1.04s)
+  143.34s -> 143.74s (0.40s)
+  149.00s -> 150.00s (1.00s)
+  156.84s -> 157.92s (1.08s)
+  159.24s -> 160.32s (1.08s)
+  161.20s -> 162.25s (1.05s)
+  163.69s -> 164.69s (1.00s)
+  166.87s -> 167.99s (1.12s)
+  176.58s -> 177.66s (1.08s)
+  179.22s -> 180.32s (1.10s)
+  181.36s -> 182.40s (1.04s)
+  184.47s -> 184.87s (0.40s)
+  187.47s -> 188.49s (1.02s)
+  191.39s -> 192.54s (1.15s)
+  193.46s -> 194.50s (1.04s)
+  204.32s -> 205.43s (1.11s)
+  216.67s -> 217.78s (1.11s)
+  219.24s -> 220.33s (1.09s)
+  223.09s -> 223.51s (0.42s)
+  229.33s -> 230.44s (1.11s)
+  231.13s -> 232.24s (1.11s)
+  233.38s -> 234.48s (1.10s)
+  235.82s -> 236.88s (1.06s)
+  242.64s -> 243.82s (1.18s)
+  247.76s -> 248.81s (1.05s)
+  256.74s -> 257.80s (1.06s)
+  264.32s -> 265.40s (1.08s)
+  272.27s -> 273.36s (1.09s)
+  278.52s -> 278.94s (0.42s)
+  283.98s -> 285.04s (1.06s)
+  287.05s -> 288.17s (1.12s)
+  289.21s -> 290.27s (1.06s)
+  296.35s -> 296.77s (0.42s)
+  299.41s -> 300.56s (1.15s)
+  302.66s -> 303.76s (1.10s)
+  317.61s -> 318.67s (1.06s)
+  324.79s -> 325.88s (1.09s)
+  331.57s -> 332.65s (1.08s)
+  340.23s -> 341.25s (1.02s)
+  349.78s -> 350.88s (1.10s)
+  359.19s -> 360.19s (1.00s)
+  363.17s -> 364.19s (1.02s)
+  367.61s -> 368.63s (1.02s)
+  371.59s -> 372.63s (1.04s)
+  374.35s -> 375.45s (1.10s)
+  377.21s -> 378.30s (1.09s)
+  380.48s -> 381.52s (1.04s)
+  386.59s -> 387.67s (1.08s)
+  390.17s -> 390.59s (0.42s)
+  392.21s -> 392.67s (0.46s)
+  393.45s -> 394.47s (1.02s)
+  402.56s -> 403.52s (0.96s)
+  404.86s -> 405.86s (1.00s)
+  411.71s -> 412.71s (1.00s)
+  419.28s -> 420.36s (1.08s)
+  425.62s -> 426.06s (0.44s)
+  435.70s -> 436.75s (1.05s)
+  446.51s -> 447.55s (1.04s)
+  448.19s -> 449.29s (1.10s)
+  458.50s -> 459.60s (1.10s)
+  460.50s -> 461.58s (1.08s)
+  462.56s -> 463.64s (1.08s)
+  466.46s -> 467.48s (1.02s)
+  472.99s -> 474.09s (1.10s)
+  481.29s -> 482.39s (1.10s)
+  489.74s -> 490.80s (1.06s)
+  495.22s -> 496.26s (1.04s)
+  502.22s -> 503.23s (1.01s)
+  509.55s -> 509.97s (0.42s)
+  512.95s -> 514.03s (1.08s)
+  518.74s -> 519.75s (1.01s)
+  521.70s -> 522.12s (0.42s)
+  524.76s -> 525.18s (0.42s)
+  531.40s -> 532.44s (1.04s)
+  534.62s -> 535.64s (1.02s)
+  537.10s -> 538.14s (1.04s)
+  548.54s -> 549.57s (1.03s)
+  555.91s -> 556.93s (1.02s)
+  565.68s -> 566.72s (1.04s)
+  570.68s -> 571.73s (1.05s)
+  574.37s -> 575.45s (1.08s)
+  579.31s -> 579.71s (0.40s)
+  581.09s -> 581.51s (0.42s)
+  589.65s -> 590.68s (1.03s)
+  596.80s -> 597.87s (1.07s)
+  606.74s -> 607.78s (1.04s)
+  616.35s -> 617.37s (1.02s)
+  620.27s -> 621.27s (1.00s)
+  624.18s -> 625.21s (1.03s)
+  628.79s -> 629.19s (0.40s)
+  635.51s -> 636.63s (1.12s)
+  642.19s -> 643.23s (1.04s)
+  646.07s -> 647.11s (1.04s)
+  649.77s -> 650.19s (0.42s)
+  652.93s -> 653.99s (1.06s)
+  657.30s -> 658.28s (0.98s)
+  667.18s -> 668.24s (1.06s)
+
+GROUPS:
+  1: 0.23s - 3.05s => it is 247 in the morning, and you are awake.
+  2: 4.15s - 5.15s => not from a nightmare.
+  3: 6.21s - 7.02s => not from noise.
+  4: 8.12s - 9.50s => you simply open your eyes,
+  5: 9.90s - 12.54s => and now the ceiling is the only thing looking back at you.
+  6: 13.56s - 14.52s => you check your phone.
+  7: 15.54s - 20.32s => you do the math on how many hours of sleep remain, and the number tightens something in your chest.
+  8: 21.39s - 24.09s => this happens to you more often than you admit out loud.
+  9: 25.11s - 26.27s => you call it insomnia.
+  10: 27.27s - 30.91s => you blame your phone, your job, the second coffee you didn't need.
+  11: 31.91s - 37.03s => but somewhere underneath all of that, a clock older than language is doing exactly what it was built to do.
+  12: 38.11s - 40.39s => you were never supposed to sleep straight through the night.
+  13: 41.43s - 42.51s => almost nobody was.
+  14: 43.63s - 44.87s => for most of human history,
+  15: 45.27s - 51.02s => sleep did not look like one unbroken block, eight hours flat on your back until an alarm decides otherwise.
+  16: 52.16s - 56.52s => it looked like two separate sleeps, with a stretch of quiet wakefulness sitting between them.
+  17: 57.55s - 60.07s => historians did not have to dig this up from ruins.
+  18: 61.17s - 69.61s => it was sitting in plain sight, written into diaries, court records, and folk tales for hundreds of years, hiding in language nobody thought to question.
+  19: 70.67s - 71.57s => so what changed?
+  20: 72.59s - 76.15s => and why does your body still seem to know or rhythm you never consciously learned?
+  21: 77.21s - 81.07s => why 247, and not 3, or 4, or 5?
+  22: 82.11s - 85.17s => the hour your body lands on is suspiciously consistent.
+  23: 86.22s - 88.54s => historically, that hour even had a name.
+  24: 89.58s - 93.80s => there is a word for the gap between your first sleep ending and your second sleep beginning.
+  25: 94.80s - 97.24s => pre-industrial europeans called it the watch.
+  26: 98.36s - 99.66s => it was not wasted time.
+  27: 100.70s - 103.63s => it was used deliberately by people who needed it.
+  28: 104.69s - 113.27s => modern sleep doctors estimate that roughly a third of adults now report waking in the night at least three times a week, almost always around the same one or two hours,
+  29: 113.73s - 118.32s => a complaint clinics treat as a disorder, with a name and a prescription pad waiting behind it.
+  30: 119.30s - 124.72s => but before you find out what people once did with that hour, you need to sit with how strange this actually is.
+  31: 125.84s - 127.66s => your body is still finding that hour.
+  32: 128.75s - 129.43s => automatically.
+  33: 130.51s - 131.03s => faithfully.
+  34: 132.08s - 134.86s => at a time you never chose on a night you didn't plan.
+  35: 135.90s - 143.34s => in 2005, historian a. roger occurred to virginia tech published a study of more than 500 references to two-part sleep,
+  36: 143.74s - 149.00s => pulled for medical texts, plays, diaries, and personal letters across pre-industrial europe.
+  37: 150.00s - 156.84s => people wrote casually about waking for their first sleep, doing something, then returning to their second sleep, before dawn.
+  38: 157.92s - 159.24s => nobody explained the term.
+  39: 160.32s - 161.20s => nobody needed to.
+  40: 162.25s - 163.69s => everyone already understood it.
+  41: 164.69s - 166.87s => the canterbury tales mentions it directly.
+  42: 167.99s - 176.58s => so do english court depositions from the 1600s, where witnesses placed crimes, after first sleep, the way you might casually say, after lunch.
+  43: 177.66s - 179.22s => this was not poetic language.
+  44: 180.32s - 181.36s => it was a timestamp.
+  45: 182.40s - 184.47s => an ordinary hour with an ordinary name,
+  46: 184.87s - 187.47s => used by ordinary people who never thought to question it.
+  47: 188.49s - 191.39s => what happened during that hour matters more than the hour itself?
+  48: 192.54s - 193.46s => some people prayed.
+  49: 194.50s - 204.32s => religious manuals from the period specifically recommended the watch is the best time for quiet devotion, because the house was dark, the children were asleep, and the mind was finally calm.
+  50: 205.43s - 216.67s => some people had sex, physicians of the era believed children conceived after first sleep were healthier and stronger, a claim with no real evidence behind it, but real enough to shape behavior for generations.
+  51: 217.78s - 219.24s => and some people simply talked
+  52: 220.33s - 223.09s => in households with no electric light, no screens,
+  53: 223.51s - 229.33s => and one shared fire slowly dying in the corner, the watch became the unofficial hour for low conversation.
+  54: 230.44s - 231.13s => old stories.
+  55: 232.24s - 233.38s => half-finished arguments.
+  56: 234.48s - 235.82s => plans for tomorrow's work.
+  57: 236.88s - 242.64s => the kind of talk that only happens when no one can see your face clearly and nobody is in any hurry to go anywhere.
+  58: 243.82s - 247.76s => a church traces the disappearance of this pattern to a fairly specific window.
+  59: 248.81s - 256.74s => affordable street lighting spread through european cities in the late 1600s and 1700s, stretching the evening later than firelight ever had.
+  60: 257.80s - 264.32s => then, in 1879, thomas edison's commercially viable light bulb pushed that process to its endpoint.
+  61: 265.40s - 272.27s => factory schedule soon followed, demanding one-long, predictable block of unconsciousness instead of two negotiable ones.
+  62: 273.36s - 278.52s => by the early 1900s references to first sleep had all but vanished from english print,
+  63: 278.94s - 283.98s => not because biology had changed, but because nothing in modern life left room for the watch anymore.
+  64: 285.04s - 287.05s => this was not a glitch in pre-modern life.
+  65: 288.17s - 289.21s => it was infrastructure.
+  66: 290.27s - 296.35s => an entire emotional and social system, quietly built around an hour of darkness most of us now spend alone,
+  67: 296.77s - 299.41s => staring at a ceiling, wondering what is wrong with us.
+  68: 300.56s - 302.66s => there may have been a harder reason for it too.
+  69: 303.76s - 317.61s => anthropologist studying small, fire-dependent groups have long noted that someone needed to stay alert in the deepest part of the night, to feed a dying fire, to listen for movement at the edge of camp, to notice what silence sounded like before it became a problem.
+  70: 318.67s - 324.79s => a single eight-hour collapse into total unconsciousness is a risk a small group sleeping in the open could not always afford.
+  71: 325.88s - 331.57s => a staggered watch, built into the biology itself, meant someone nearby was always close to a wake.
+  72: 332.65s - 340.23s => then, in 1990, psychiatrist thomas were at the national institute of mental health ran an experiment that gave this old pattern a body.
+  73: 341.25s - 349.78s => he took a group of adults and put them in 14 hours of darkness a night, for a full month, with no clocks, no light, and nothing to do but exist.
+  74: 350.88s - 359.19s => by the fourth week, every single one of them split into two distinct sleep bouts, with one to two hours of calm, alert wakefulness sitting between them.
+  75: 360.19s - 363.17s => their melatonin spiked during that window instead of dropping.
+  76: 364.19s - 367.61s => their brain waves look nothing like the ragged static of insomnia.
+  77: 368.63s - 371.59s => they look like rest with the lights briefly turned on inside.
+  78: 372.63s - 374.35s => here is the detail that should stop you.
+  79: 375.45s - 377.21s => nobody told these people to wake up.
+  80: 378.30s - 380.48s => nobody handed them a watch and a job to do.
+  81: 381.52s - 386.59s => their bodies did it on their own, the moment the artificial length of modern light stopped getting in the way.
+  82: 387.67s - 390.17s => so if this rhythm is sitting under your skin right now,
+  83: 390.59s - 392.21s => waiting for the right kind of darkness,
+  84: 392.67s - 393.45s => what happened to it?
+  85: 394.47s - 402.56s => and why did it disappear so completely that scientists had to rediscover it in a locked research room, 300 years after it was last mentioned in a diary?
+  86: 403.52s - 404.86s => but here is the dark turn.
+  87: 405.86s - 411.71s => the story is not as clean as ancient humans slept in two parts, and modern light ruined it for everyone.
+  88: 412.71s - 419.28s => because in 2015, neuroscientist jerome siegel at ucla did something nobody had thought to do before.
+  89: 420.36s - 425.62s => he put ethnography sleep trackers on three modern hunter gatherer and forge a horticulturalist societies.
+  90: 426.06s - 435.70s => the hods are of tanzania, the sand of namibia, and that simon of bolivia, group still living without electricity, almost completely untouched by industrial light pollution.
+  91: 436.75s - 446.51s => if segmented sleep is very deep in human biology, woven into us by hundreds of thousands of years of evolution, these were the people who should still have it untouched and intact.
+  92: 447.55s - 448.19s => they did not.
+  93: 449.29s - 458.50s => across hundreds of recorded nights, all three groups slept in a single consolidated block, roughly six and a half hours long, with no nightly watch period at all.
+  94: 459.60s - 460.50s => no first sleep.
+  95: 461.58s - 462.56s => no second sleep.
+  96: 463.64s - 466.46s => no quiet, fire-lit hour of talking in the middle.
+  97: 467.48s - 472.99s => their bodies simply went down once and got up once, the way a clock unaware of history is supposed to.
+  98: 474.09s - 481.29s => which means the two-part sleep-acurch found in his diaries was probably not some universal ancestral setting that humanity slowly lost.
+  99: 482.39s - 489.74s => it may have been something far more specific, a pattern that only surfaces when the night itself runs longer than the body's actual need for rest.
+  100: 490.80s - 495.22s => pre-industrial european winters could stretch true darkness to 14 hours or more.
+  101: 496.26s - 502.22s => given that much night, the body splits the difference and rests twice, with a window of wakefulness in between.
+  102: 503.23s - 509.55s => give it a six hour tropical night instead, the kind the hodza and the sand have always slept under, and it sleeps once,
+  103: 509.97s - 512.95s => straight through, with nothing left over to spend on a watch.
+  104: 514.03s - 518.74s => your 247 am is not a fossil passed down unchanged from the pleistocene.
+  105: 519.75s - 521.70s => it is something closer to a relationship,
+  106: 522.12s - 524.76s => between your biology and the length of your particular night,
+  107: 525.18s - 531.40s => and right now, in your particular life, that relationship has been quietly broken in a way nobody fully saw coming.
+  108: 532.44s - 534.62s => this is the part almost nobody talks about.
+  109: 535.64s - 537.10s => we did not just shorten the night.
+  110: 538.14s - 548.54s => we flooded what was left of it with light from the inside, with screens, street lamps, and bulbs casting nearly a thousand times the brightness our biology evolved to expect after sunset.
+  111: 549.57s - 555.91s => that light suppresses melatonin late into the evening, and an alarm clock cuts the morning short before the body is finished.
+  112: 556.93s - 565.68s => we have built a night tube right to fully rest in and too short to fully recover from, then we act surprised when something cracks open in the middle of it at 247.
+  113: 566.72s - 570.68s => which means waking at that hour is not, by itself, a malfunction.
+  114: 571.73s - 574.37s => it might be the most honest thing your body does all day.
+  115: 575.45s - 579.31s => it may be your nervous system attempting an old half remembered negotiation.
+  116: 579.71s - 581.09s => first sleep, a watch,
+  117: 581.51s - 589.65s => second sleep, except now there is no fire to sit by, no household stirring quietly around you, no ritual built to fill that hour with meaning.
+  118: 590.68s - 596.80s => just a phone, a glowing rectangle in the dark, doing nothing your ancestors fire and voices ever did for them.
+  119: 597.87s - 606.74s => modern sleep medicine even has a clinical name for this exact pattern, sleep maintenance in somia, one of the most commonly diagnosed sleep complaints in adults today.
+  120: 607.78s - 616.35s => doctors prescribed melatonin, sedatives, sometimes both, to flatten a rhythm that, in a different century, would have simply been called tuesday night.
+  121: 617.37s - 620.27s => we medicated an inheritance because we forgot it was one.
+  122: 621.27s - 624.18s => the watch did not vanish because your biology changed.
+  123: 625.21s - 628.79s => it vanished because everything that used to surround the hour disappeared first,
+  124: 629.19s - 635.51s => the firelight, the company, the unspoken permission to simply be awake without needing a reason or a diagnosis.
+  125: 636.63s - 642.19s => what is left now is the waking itself, stripped of everything that once made it feel ordinary instead of broken.
+  126: 643.23s - 646.07s => you are not malfunctioning at 247 in the morning.
+  127: 647.11s - 649.77s => you are alone, for the first time in human history,
+  128: 650.19s - 652.93s => inside an hour that was never designed to be spent alone.
+  129: 653.99s - 657.30s => the ceiling above you has not changed since the moment you fell asleep.
+  130: 658.28s - 667.18s => but the silence filling the room is doing something your ancestors would have filled instead, with a low voice, a half finished story, a prayer murmured near a dying fire.
+  131: 668.24s - 678.49s => you are simply lying inside a much older hour than you realized, in a body still keeping a kind of time the rest of your life forgot, waiting for a companion that electricity quietly switched off.
+
+TIMELINE:
+  S001: 0.23s - 4.15s (3.92s) | 1. It is 2_47 in the morning, and you ar
+  S002: 4.15s - 6.21s (2.06s) | 2. Not from a nightmare..png
+  S003: 6.21s - 8.12s (1.91s) | 3. Not from noise..png
+  S004: 8.12s - 9.90s (1.78s) | 4. You simply opened your eyes, and now 
+  S005: 9.90s - 13.56s (3.66s) | 5. You check your phone..png
+  S006: 13.56s - 15.54s (1.98s) | 6. You do the math on how many hours of 
+  S007: 15.54s - 21.39s (5.85s) | 7. This happens to you more often than y
+  S008: 21.39s - 25.11s (3.72s) | 8. You call it insomnia..png
+  S009: 25.11s - 27.27s (2.16s) | 9. You blame your phone, your job, the s
+  S010: 27.27s - 31.91s (4.64s) | 10. But somewhere underneath all of that
+  S011: 31.91s - 38.11s (6.20s) | 11. You were never supposed to sleep str
+  S012: 38.11s - 41.43s (3.32s) | 12. Almost nobody was..png
+  S013: 41.43s - 43.63s (2.20s) | 13. For most of human history, sleep did
+  S014: 43.63s - 45.27s (1.64s) | 14. It looked like two separate sleeps, 
+  S015: 45.27s - 52.16s (6.89s) | 15. Historians did not have to dig this 
+  S016: 52.16s - 57.55s (5.39s) | 16. It was sitting in plain sight, writt
+  S017: 57.55s - 61.17s (3.62s) | 17. So what changed_.png
+  S018: 61.17s - 70.67s (9.50s) | 18. And why does your body still seem to
+  S019: 70.67s - 72.59s (1.92s) | 19. Why two-forty-seven, and not three, 
+  S020: 72.59s - 77.21s (4.62s) | 20. The hour your body lands on is suspi
+  S021: 77.21s - 82.11s (4.90s) | 21. Historically, that hour even had a n
+  S022: 82.11s - 86.22s (4.11s) | 22. There is a word for the gap between 
+  S023: 86.22s - 89.58s (3.36s) | 23. Pre-industrial Europeans called it _
+  S024: 89.58s - 94.80s (5.22s) | 24. It was not wasted time..png
+  S025: 94.80s - 98.36s (3.56s) | 25. It was used, deliberately, by people
+  S026: 98.36s - 100.70s (2.34s) | 26. Modern sleep doctors estimate that r
+  S027: 100.70s - 104.69s (3.99s) | 27. But before you find out what people 
+  S028: 104.69s - 113.73s (9.04s) | 28. Your body is still finding that hour
+  S029: 113.73s - 119.30s (5.57s) | 29. Automatically..png
+  S030: 119.30s - 125.84s (6.54s) | 30. Faithfully..png
+  S031: 125.84s - 128.75s (2.91s) | 31. At a time you never chose, on a nigh
+  S032: 128.75s - 130.51s (1.76s) | 32. In 2005, historian A. Roger Ekirch a
+  S033: 130.51s - 132.08s (1.57s) | 33. People wrote casually about waking f
+  S034: 132.08s - 135.90s (3.82s) | 34. Nobody explained the term..png
+  S035: 135.90s - 143.74s (7.84s) | 35. Nobody needed to..png
+  S036: 143.74s - 150.00s (6.26s) | 36. Everyone already understood it..png
+  S037: 150.00s - 157.92s (7.92s) | 37. The Canterbury Tales mentions it dir
+  S038: 157.92s - 160.32s (2.40s) | 38. So do English court depositions from
+  S039: 160.32s - 162.25s (1.93s) | 39. This was not poetic language..png
+  S040: 162.25s - 164.69s (2.44s) | 40. It was a timestamp..png
+  S041: 164.69s - 167.99s (3.30s) | 41. An ordinary hour with an ordinary na
+  S042: 167.99s - 177.66s (9.67s) | 42. What happened during that hour matte
+  S043: 177.66s - 180.32s (2.66s) | 43. Some people prayed..png
+  S044: 180.32s - 182.40s (2.08s) | 44. Religious manuals from the period sp
+  S045: 182.40s - 184.87s (2.47s) | 45. Some people had sex — physicians of 
+  S046: 184.87s - 188.49s (3.62s) | 46. And some people simply talked..png
+  S047: 188.49s - 192.54s (4.05s) | 47. In households with no electric light
+  S048: 192.54s - 194.50s (1.96s) | 48. Old stories..png
+  S049: 194.50s - 205.43s (10.93s) | 49. Half-finished arguments..png
+  S050: 205.43s - 217.78s (12.35s) | 50. Plans for tomorrow's work..png
+  S051: 217.78s - 220.33s (2.55s) | 51. The kind of talk that only happens w
+  S052: 220.33s - 223.51s (3.18s) | 52. Ekirch traces the disappearance of t
+  S053: 223.51s - 230.44s (6.93s) | 53. Affordable street lighting spread th
+  S054: 230.44s - 232.24s (1.80s) | 54. Then, in 1879, Thomas Edison's comme
+  S055: 232.24s - 234.48s (2.24s) | 55. Factory schedules soon followed, dem
+  S056: 234.48s - 236.88s (2.40s) | 56. By the early 1900s, references to _f
+  S057: 236.88s - 243.82s (6.94s) | 57. This was not a glitch in pre-modern 
+  S058: 243.82s - 248.81s (4.99s) | 58. It was infrastructure..png
+  S059: 248.81s - 257.80s (8.99s) | 59. An entire emotional and social syste
+  S060: 257.80s - 265.40s (7.60s) | 60. There may have been a harder reason 
+  S061: 265.40s - 273.36s (7.96s) | 61. Anthropologists studying small, fire
+  S062: 273.36s - 278.94s (5.58s) | 62. A single eight-hour collapse into to
+  S063: 278.94s - 285.04s (6.10s) | 63. A staggered watch, built into the bi
+  S064: 285.04s - 288.17s (3.13s) | 64. Then, in 1990, psychiatrist Thomas W
+  S065: 288.17s - 290.27s (2.10s) | 65. He took a group of adults and put th
+  S066: 290.27s - 296.77s (6.50s) | 66. By the fourth week, every single one
+  S067: 296.77s - 300.56s (3.79s) | 67. Their melatonin spiked during that w
+  S068: 300.56s - 303.76s (3.20s) | 68. Their brain waves looked nothing lik
+  S069: 303.76s - 318.67s (14.91s) | 69. They looked like rest with the light
+  S070: 318.67s - 325.88s (7.21s) | 70. Here is the detail that should stop 
+  S071: 325.88s - 332.65s (6.77s) | 71. Nobody told these people to wake up.
+  S072: 332.65s - 341.25s (8.60s) | 72. Nobody handed them a watch and a job
+  S073: 341.25s - 350.88s (9.63s) | 73. Their bodies did it on their own, th
+  S074: 350.88s - 360.19s (9.31s) | 74. So if this rhythm is sitting under y
+  S075: 360.19s - 364.19s (4.00s) | 75. And why did it disappear so complete
+  S076: 364.19s - 368.63s (4.44s) | 76. But here is the dark turn..png
+  S077: 368.63s - 372.63s (4.00s) | 77. The story is not as clean as _ancien
+  S078: 372.63s - 375.45s (2.82s) | 78. Because in 2015, neuroscientist Jero
+  S079: 375.45s - 378.30s (2.85s) | 79. He put actigraphy sleep trackers on 
+  S080: 378.30s - 381.52s (3.22s) | 80. If segmented sleep is buried deep in
+  S081: 381.52s - 387.67s (6.15s) | 81. They did not..png
+  S082: 387.67s - 390.59s (2.92s) | 82. Across hundreds of recorded nights, 
+  S083: 390.59s - 392.67s (2.08s) | 83. No first sleep..png
+  S084: 392.67s - 394.47s (1.80s) | 84. No second sleep..png
+  S085: 394.47s - 403.52s (9.05s) | 85. No quiet, firelit hour of talking in
+  S086: 403.52s - 405.86s (2.34s) | 86. Their bodies simply went down once a
+  S087: 405.86s - 412.71s (6.85s) | 87. Which means the two-part sleep Ekirc
+  S088: 412.71s - 420.36s (7.65s) | 88. It may have been something far more 
+  S089: 420.36s - 426.06s (5.70s) | 89. Pre-industrial European winters coul
+  S090: 426.06s - 436.75s (10.69s) | 90. Given that much night, the body spli
+  S091: 436.75s - 447.55s (10.80s) | 91. Give it a six-hour tropical night in
+  S092: 447.55s - 449.29s (1.74s) | 92. Your 2_47 a.m. is not a fossil passe
+  S093: 449.29s - 459.60s (10.31s) | 93. It is something closer to a relation
+  S094: 459.60s - 461.58s (1.98s) | 94. This is the part almost nobody talks
+  S095: 461.58s - 463.64s (2.06s) | 95. We did not just shorten the night..p
+  S096: 463.64s - 467.48s (3.84s) | 96. We flooded what was left of it with 
+  S097: 467.48s - 474.09s (6.61s) | 97. That light suppresses melatonin late
+  S098: 474.09s - 482.39s (8.30s) | 98. We have built a night too bright to 
+  S099: 482.39s - 490.80s (8.41s) | 99. Which means waking at that hour is n
+  S100: 490.80s - 496.26s (5.46s) | 100. It might be the most honest thing y
+  S101: 496.26s - 503.23s (6.97s) | 101. It may be your nervous system attem
+  S102: 503.23s - 509.97s (6.74s) | 102. Just a phone, a glowing rectangle i
+  S103: 509.97s - 514.03s (4.06s) | 103. Modern sleep medicine even has a cl
+  S104: 514.03s - 519.75s (5.72s) | 104. Doctors prescribe melatonin, sedati
+  S105: 519.75s - 522.12s (2.37s) | 105. We medicated an inheritance because
+  S106: 522.12s - 525.18s (3.06s) | 106. The watch did not vanish because yo
+  S107: 525.18s - 532.44s (7.26s) | 107. It vanished because everything that
+  S108: 532.44s - 535.64s (3.20s) | 108. What is left now is the waking itse
+  S109: 535.64s - 538.14s (2.50s) | 109. You are not malfunctioning at 2_47 
+  S110: 538.14s - 549.57s (11.43s) | 110. You are alone, for the first time i
+  S111: 549.57s - 556.93s (7.36s) | 111. The ceiling above you has not chang
+  S112: 556.93s - 566.72s (9.79s) | 112. But the silence filling the room is
+  S113: 566.72s - 571.73s (5.01s) | 113. You are simply lying inside a much 
+  S114: 571.73s - 575.45s (3.72s) | 113. You are simply lying inside a much 
+  S115: 575.45s - 579.71s (4.26s) | 113. You are simply lying inside a much 
+  S116: 579.71s - 581.51s (1.80s) | 113. You are simply lying inside a much 
+  S117: 581.51s - 590.68s (9.17s) | 113. You are simply lying inside a much 
+  S118: 590.68s - 597.87s (7.19s) | 113. You are simply lying inside a much 
+  S119: 597.87s - 607.78s (9.91s) | 113. You are simply lying inside a much 
+  S120: 607.78s - 617.37s (9.59s) | 113. You are simply lying inside a much 
+  S121: 617.37s - 621.27s (3.90s) | 113. You are simply lying inside a much 
+  S122: 621.27s - 625.21s (3.94s) | 113. You are simply lying inside a much 
+  S123: 625.21s - 629.19s (3.98s) | 113. You are simply lying inside a much 
+  S124: 629.19s - 636.63s (7.44s) | 113. You are simply lying inside a much 
+  S125: 636.63s - 643.23s (6.60s) | 113. You are simply lying inside a much 
+  S126: 643.23s - 647.11s (3.88s) | 113. You are simply lying inside a much 
+  S127: 647.11s - 650.19s (3.08s) | 113. You are simply lying inside a much 
+  S128: 650.19s - 653.99s (3.80s) | 113. You are simply lying inside a much 
+  S129: 653.99s - 658.28s (4.29s) | 113. You are simply lying inside a much 
+  S130: 658.28s - 668.24s (9.96s) | 113. You are simply lying inside a much 
+  S131: 668.24s - 678.49s (10.25s) | 113. You are simply lying inside a much 
+
+Segments: 131
+Duration: 678.49s

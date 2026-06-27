@@ -21,7 +21,7 @@ if %errorlevel% equ 0 (
     if exist audio.mp3 goto :done
 )
 
-python -m edge_tts -f script.txt -v en-US-ChristopherNeural --write-media audio.mp3
+python -m edge-tts -f script.txt -v en-US-ChristopherNeural --rate=+10% --write-media audio.mp3
 if exist audio.mp3 goto :done
 
 echo ERROR: edge-tts not found. Run: pip install edge-tts

@@ -1,0 +1,186 @@
+============================================================
+ DEBUG LOG
+============================================================
+
+MATCH POSITIONS:
+
+PER-IMAGE MATCH:
+  S001: pos=   0 score=  7.0 start=0.00s | 1. Right now, something inside you wants
+  S002: pos=   7 score=  6.0 start=3.79s | 2. Maybe it's been a long day..png
+  S003: pos=  13 score= 20.0 start=6.15s | 3. Maybe someone said something that hur
+  S004: pos=  33 score=  4.0 start=12.84s | 4. You open the cabinet..png
+  S005: pos=  37 score= 20.0 start=14.94s | 5. You stand in front of the vending mac
+  S006: pos=  57 score=  8.0 start=20.98s | 6. Your hand reaches before your mind de
+  S007: pos=  65 score=  5.0 start=24.68s | 7. This is not a flaw..png
+  S008: pos=  70 score=  4.0 start=26.74s | 8. This is not weakness..png
+  S009: pos=  74 score= 30.0 start=28.94s | 9. This is a system inside your brain th
+  S010: pos= 104 score=  5.0 start=37.58s | 10. Here is the strange part..png
+  S011: pos= 109 score=  6.0 start=39.84s | 11. Sugar itself is not particularly nut
+  S012: pos= 115 score= 18.0 start=43.39s | 12. It has almost no protein, no fat, no
+  S013: pos= 134 score= 18.0 start=50.31s | 13. And yet, when you are anxious, griev
+  S014: pos= 152 score=  4.0 start=57.96s | 14. It reaches for sweetness..png
+  S015: pos= 156 score= 28.0 start=60.34s | 15. Why would a system shaped by million
+  S016: pos= 184 score=  7.0 start=69.81s | 16. The answer is not really about food.
+  S017: pos= 190 score= 12.0 start=71.37s | 17. It is about a season that ended roug
+  S018: pos= 211 score= 23.8 start=78.60s | 18. Before there were vending machines, 
+  S019: pos= 256 score= 29.0 start=95.71s | 19. What happened inside that window rew
+  S020: pos= 291 score=  7.0 start=107.95s | 20. But that is only half the story..png
+  S021: pos= 298 score= 12.0 start=110.63s | 21. Around fifty million years ago, the 
+  S022: pos= 313 score= 19.0 start=118.21s | 22. In 1996, biologist Gerald Jacobs at 
+  S023: pos= 332 score= 11.0 start=127.28s | 23. Most mammals see only a narrow range
+  S024: pos= 343 score= 18.0 start=131.61s | 24. Primates gained the ability to see r
+  S025: pos= 362 score=  4.0 start=138.99s | 25. This was not decorative..png
+  S026: pos= 366 score= 21.0 start=141.21s | 26. It was a targeting system, built so 
+  S027: pos= 389 score=  6.0 start=148.19s | 27. Ripeness, in other words, was a dead
+  S028: pos= 395 score= 11.0 start=150.24s | 28. Unripe fruit is often bitter, someti
+  S029: pos= 407 score= 17.0 start=156.52s | 29. Ripe fruit is a brief truce — sugar 
+  S030: pos= 427 score= 16.0 start=164.85s | 30. Miss that window and the calories ar
+  S031: pos= 444 score=  8.0 start=170.44s | 31. This single fact shaped something de
+  S032: pos= 452 score= 21.0 start=174.70s | 32. In 2014, anthropologist Nathaniel Do
+  S033: pos= 476 score=  4.0 start=185.37s | 33. Sweet never meant _treat._.png
+  S034: pos= 480 score= 13.0 start=187.83s | 34. Sweet meant the window is open, take
+  S035: pos= 493 score=  7.0 start=192.59s | 35. The brain that hesitated lost the ca
+  S036: pos= 500 score= 10.0 start=195.91s | 36. The brain that grabbed immediately s
+  S037: pos= 510 score=  7.0 start=200.18s | 37. That urgency had to be stored somewh
+  S038: pos= 517 score= 20.0 start=203.20s | 38. It landed in dopamine — the chemical
+  S039: pos= 539 score= 16.0 start=210.89s | 39. In 1996, Princeton researcher Bartle
+  S040: pos= 574 score=  6.0 start=225.65s | 40. Now add stress to the system..png
+  S041: pos= 580 score= 21.8 start=228.28s | 41. In 2003, physiologist Mary Dallman a
+  S042: pos= 611 score=  2.0 start=242.73s | 42. Cortisol dropped..png
+  S043: pos= 613 score=  8.0 start=244.71s | 43. The animals didn't even need to be h
+  S044: pos= 621 score=  7.0 start=247.69s | 44. The craving was never really about e
+  S045: pos= 628 score= 16.0 start=250.84s | 45. It was the brain trying to shut off 
+  S046: pos= 644 score=  8.0 start=255.51s | 46. Among hunter-gatherer groups studied
+  S047: pos= 652 score= 22.0 start=260.04s | 47. Anthropologist Alyssa Crittenden, wo
+  S048: pos= 698 score=  7.0 start=277.94s | 48. Sweetness was never something to man
+  S049: pos= 705 score= 14.0 start=281.30s | 49. It was something to seize the moment
+  S050: pos= 719 score=  9.0 start=286.18s | 50. This explains why the contrast matte
+  S051: pos= 728 score= 11.0 start=290.14s | 51. A wild fig studied by botanists rare
+  S052: pos= 742 score= 15.0 start=295.83s | 52. A modern supermarket grape, bred ove
+  S053: pos= 758 score=  8.0 start=303.27s | 53. The plant did not change on its own.
+  S054: pos= 766 score= 26.8 start=306.12s | 54. For thousands of years, humans kept 
+  S055: pos= 796 score= 23.0 start=316.92s | 55. For roughly two hundred thousand yea
+  S056: pos= 824 score=  5.0 start=329.43s | 56. There was no daily access..png
+  S057: pos= 829 score=  5.0 start=332.00s | 57. There was no constant supply..png
+  S058: pos= 834 score=  7.0 start=334.56s | 58. The circuit assumed scarcity as a pe
+  S059: pos= 842 score= 17.0 start=338.31s | 59. That assumption held all the way unt
+  S060: pos= 859 score=  6.0 start=343.93s | 60. But here is the dark turn..png
+  S061: pos= 865 score= 23.8 start=346.31s | 61. In the early 1980s, executives insid
+  S062: pos= 901 score= 23.8 start=362.00s | 62. Food scientist Howard Moskowitz, con
+  S063: pos= 948 score= 26.0 start=379.60s | 63. This means the urgency you feel stan
+  S064: pos= 976 score= 19.8 start=387.78s | 64. It is a precision-engineered echo of
+  S065: pos=1019 score=  5.0 start=403.14s | 65. And grief makes it worse..png
+  S066: pos=1024 score=  6.0 start=405.64s | 66. Sadness, like physical threat, raise
+  S067: pos=1030 score= 24.0 start=409.85s | 67. Your ancient system reads rising cor
+  S068: pos=1054 score=  8.0 start=417.39s | 68. It does not distinguish between dang
+  S069: pos=1062 score= 16.0 start=421.12s | 69. It simply activates the oldest shuto
+  S070: pos=1078 score=  8.0 start=427.94s | 70. The candy bar was never really about
+  S071: pos=1086 score= 16.0 start=431.28s | 71. It was about silencing an alarm that
+  S072: pos=1104 score=  8.0 start=438.23s | 72. Step back far enough and the picture
+  S073: pos=1112 score= 13.0 start=441.61s | 73. This was never really a story about 
+  S074: pos=1124 score= 25.0 start=445.53s | 74. It was a story about a brain built f
+  S075: pos=1157 score= 11.0 start=456.76s | 75. Every aisle of a grocery store is, i
+  S076: pos=1182 score=  7.0 start=466.05s | 76. Your body still runs the original pr
+  S077: pos=1189 score= 32.8 start=469.24s | 77. When you feel low, when something hu
+  S078: pos=1228 score=  7.0 start=481.37s | 78. You are not broken when this happens
+  S079: pos=1234 score=  4.0 start=482.69s | 79. You are simply old in a way no calen
+  S080: pos=1245 score=  3.0 start=487.93s | 80. The branch changed..png
+  S081: pos=1248 score=  4.0 start=490.01s | 81. The vending machine changed..png
+  S082: pos=1252 score=  9.0 start=492.49s | 82. The grief is real, and modern, and e
+  S083: pos=1261 score= 33.0 start=496.70s | 83. But the response underneath it is th
+  S084: pos=1295 score= 21.0 start=507.23s | 84. So the next time your hand reaches f
+  S085: pos=1316 score=  9.0 start=513.41s | 85. It is not weakness reaching for the 
+  S086: pos=1323 score= 14.0 start=515.03s | 86. It is two hundred thousand years of 
+  S087: pos=1342 score= 26.0 start=523.67s | 87. Tonight, when the sadness comes and 
+
+TIMELINE:
+  S001: 0.00s - 3.79s (3.79s) | 1. Right now, something inside you wants
+  S002: 3.79s - 6.15s (2.36s) | 2. Maybe it's been a long day..png
+  S003: 6.15s - 12.84s (6.69s) | 3. Maybe someone said something that hur
+  S004: 12.84s - 14.94s (2.10s) | 4. You open the cabinet..png
+  S005: 14.94s - 20.98s (6.04s) | 5. You stand in front of the vending mac
+  S006: 20.98s - 24.68s (3.70s) | 6. Your hand reaches before your mind de
+  S007: 24.68s - 26.74s (2.06s) | 7. This is not a flaw..png
+  S008: 26.74s - 28.94s (2.20s) | 8. This is not weakness..png
+  S009: 28.94s - 37.58s (8.64s) | 9. This is a system inside your brain th
+  S010: 37.58s - 39.84s (2.26s) | 10. Here is the strange part..png
+  S011: 39.84s - 43.39s (3.55s) | 11. Sugar itself is not particularly nut
+  S012: 43.39s - 50.31s (6.92s) | 12. It has almost no protein, no fat, no
+  S013: 50.31s - 57.96s (7.65s) | 13. And yet, when you are anxious, griev
+  S014: 57.96s - 60.34s (2.38s) | 14. It reaches for sweetness..png
+  S015: 60.34s - 69.81s (9.47s) | 15. Why would a system shaped by million
+  S016: 69.81s - 71.37s (1.56s) | 16. The answer is not really about food.
+  S017: 71.37s - 78.60s (7.23s) | 17. It is about a season that ended roug
+  S018: 78.60s - 95.71s (17.11s) | 18. Before there were vending machines, 
+  S019: 95.71s - 107.95s (12.24s) | 19. What happened inside that window rew
+  S020: 107.95s - 110.63s (2.68s) | 20. But that is only half the story..png
+  S021: 110.63s - 118.21s (7.58s) | 21. Around fifty million years ago, the 
+  S022: 118.21s - 127.28s (9.07s) | 22. In 1996, biologist Gerald Jacobs at 
+  S023: 127.28s - 131.61s (4.33s) | 23. Most mammals see only a narrow range
+  S024: 131.61s - 138.99s (7.38s) | 24. Primates gained the ability to see r
+  S025: 138.99s - 141.21s (2.22s) | 25. This was not decorative..png
+  S026: 141.21s - 148.19s (6.98s) | 26. It was a targeting system, built so 
+  S027: 148.19s - 150.24s (2.05s) | 27. Ripeness, in other words, was a dead
+  S028: 150.24s - 156.52s (6.28s) | 28. Unripe fruit is often bitter, someti
+  S029: 156.52s - 164.85s (8.33s) | 29. Ripe fruit is a brief truce — sugar 
+  S030: 164.85s - 170.44s (5.59s) | 30. Miss that window and the calories ar
+  S031: 170.44s - 174.70s (4.26s) | 31. This single fact shaped something de
+  S032: 174.70s - 185.37s (10.67s) | 32. In 2014, anthropologist Nathaniel Do
+  S033: 185.37s - 187.83s (2.46s) | 33. Sweet never meant _treat._.png
+  S034: 187.83s - 192.59s (4.76s) | 34. Sweet meant the window is open, take
+  S035: 192.59s - 195.91s (3.32s) | 35. The brain that hesitated lost the ca
+  S036: 195.91s - 200.18s (4.27s) | 36. The brain that grabbed immediately s
+  S037: 200.18s - 203.20s (3.02s) | 37. That urgency had to be stored somewh
+  S038: 203.20s - 210.89s (7.69s) | 38. It landed in dopamine — the chemical
+  S039: 210.89s - 225.65s (14.76s) | 39. In 1996, Princeton researcher Bartle
+  S040: 225.65s - 228.28s (2.63s) | 40. Now add stress to the system..png
+  S041: 228.28s - 242.73s (14.45s) | 41. In 2003, physiologist Mary Dallman a
+  S042: 242.73s - 244.71s (1.98s) | 42. Cortisol dropped..png
+  S043: 244.71s - 247.69s (2.98s) | 43. The animals didn't even need to be h
+  S044: 247.69s - 250.84s (3.15s) | 44. The craving was never really about e
+  S045: 250.84s - 255.51s (4.67s) | 45. It was the brain trying to shut off 
+  S046: 255.51s - 260.04s (4.53s) | 46. Among hunter-gatherer groups studied
+  S047: 260.04s - 277.94s (17.90s) | 47. Anthropologist Alyssa Crittenden, wo
+  S048: 277.94s - 281.30s (3.36s) | 48. Sweetness was never something to man
+  S049: 281.30s - 286.18s (4.88s) | 49. It was something to seize the moment
+  S050: 286.18s - 290.14s (3.96s) | 50. This explains why the contrast matte
+  S051: 290.14s - 295.83s (5.69s) | 51. A wild fig studied by botanists rare
+  S052: 295.83s - 303.27s (7.44s) | 52. A modern supermarket grape, bred ove
+  S053: 303.27s - 306.12s (2.85s) | 53. The plant did not change on its own.
+  S054: 306.12s - 316.92s (10.80s) | 54. For thousands of years, humans kept 
+  S055: 316.92s - 329.43s (12.51s) | 55. For roughly two hundred thousand yea
+  S056: 329.43s - 332.00s (2.57s) | 56. There was no daily access..png
+  S057: 332.00s - 334.56s (2.56s) | 57. There was no constant supply..png
+  S058: 334.56s - 338.31s (3.75s) | 58. The circuit assumed scarcity as a pe
+  S059: 338.31s - 343.93s (5.62s) | 59. That assumption held all the way unt
+  S060: 343.93s - 346.31s (2.38s) | 60. But here is the dark turn..png
+  S061: 346.31s - 362.00s (15.69s) | 61. In the early 1980s, executives insid
+  S062: 362.00s - 379.60s (17.60s) | 62. Food scientist Howard Moskowitz, con
+  S063: 379.60s - 387.78s (8.18s) | 63. This means the urgency you feel stan
+  S064: 387.78s - 403.14s (15.36s) | 64. It is a precision-engineered echo of
+  S065: 403.14s - 405.64s (2.50s) | 65. And grief makes it worse..png
+  S066: 405.64s - 409.85s (4.21s) | 66. Sadness, like physical threat, raise
+  S067: 409.85s - 417.39s (7.54s) | 67. Your ancient system reads rising cor
+  S068: 417.39s - 421.12s (3.73s) | 68. It does not distinguish between dang
+  S069: 421.12s - 427.94s (6.82s) | 69. It simply activates the oldest shuto
+  S070: 427.94s - 431.28s (3.34s) | 70. The candy bar was never really about
+  S071: 431.28s - 438.23s (6.95s) | 71. It was about silencing an alarm that
+  S072: 438.23s - 441.61s (3.38s) | 72. Step back far enough and the picture
+  S073: 441.61s - 445.53s (3.92s) | 73. This was never really a story about 
+  S074: 445.53s - 456.76s (11.23s) | 74. It was a story about a brain built f
+  S075: 456.76s - 466.05s (9.29s) | 75. Every aisle of a grocery store is, i
+  S076: 466.05s - 469.24s (3.19s) | 76. Your body still runs the original pr
+  S077: 469.24s - 481.37s (12.13s) | 77. When you feel low, when something hu
+  S078: 481.37s - 482.69s (1.32s) | 78. You are not broken when this happens
+  S079: 482.69s - 487.93s (5.24s) | 79. You are simply old in a way no calen
+  S080: 487.93s - 490.01s (2.08s) | 80. The branch changed..png
+  S081: 490.01s - 492.49s (2.48s) | 81. The vending machine changed..png
+  S082: 492.49s - 496.70s (4.21s) | 82. The grief is real, and modern, and e
+  S083: 496.70s - 507.23s (10.53s) | 83. But the response underneath it is th
+  S084: 507.23s - 513.41s (6.18s) | 84. So the next time your hand reaches f
+  S085: 513.41s - 515.03s (1.62s) | 85. It is not weakness reaching for the 
+  S086: 515.03s - 523.67s (8.64s) | 86. It is two hundred thousand years of 
+  S087: 523.67s - 536.97s (13.30s) | 87. Tonight, when the sadness comes and 
+
+Segments: 87
+Duration: 536.97s
