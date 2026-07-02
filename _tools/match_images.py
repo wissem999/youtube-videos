@@ -94,76 +94,116 @@ def get_audio_duration():
     return 60.0
 
 
-def score_match(sentence_words, transcript_words, pos):
-    if pos >= len(transcript_words):
-        return -1
-    check_len = min(len(sentence_words), len(transcript_words) - pos)
-    if check_len <= 0:
-        return -1
-    score = 0
-    for i in range(check_len):
-        sw = sentence_words[i]
-        tw = n(transcript_words[pos + i]["word"])
-        if sw == tw:
-            score += 1
-        elif i == len(sentence_words) - 1 and (tw.startswith(sw) or sw.startswith(tw)):
-            score += 0.8
-    return score
+SHORT_WORDS = set(n(w) for w in ["a", "an", "in", "on", "at", "to", "of", "is", "it",
+                                 "or", "as", "by", "up", "if", "be", "no", "so", "do",
+                                 "he", "we", "my", "me", "us", "go", "your", "you",
+                                 "its", "his", "her", "our", "the", "and", "not",
+                                 "was", "had", "but", "for", "are", "can", "all",
+                                 "had", "has", "now", "than", "did", "get", "out",
+                                 "way", "say", "who", "why", "how", "any", "own",
+                                 "see", "new", "two", "may", "too", "very", "just",
+                                 "that", "this", "what", "which", "with", "from",
+                                 "they", "them", "been", "some", "each", "when",
+                                 "more", "also", "into", "over", "such", "only",
+                                 "like", "even", "than", "then", "well", "here",
+                                 "there", "after", "still", "about", "because",
+                                 "people", "something", "between", "without"])
 
 
-def find_best_position(sentence_words, transcript_words, search_start, search_end):
-    if not sentence_words or search_start >= len(transcript_words):
-        return max(0, min(search_start, len(transcript_words) - 1)), -1
-    search_end = min(search_end, len(transcript_words))
-    best_pos = search_start
-    best_score = -1
-
-    for pos in range(search_start, search_end):
-        score = score_match(sentence_words, transcript_words, pos)
-        if score > best_score:
-            best_score = score
-            best_pos = pos
-
-    return best_pos, best_score
+def words_match(sw, tw):
+    if sw == tw:
+        return True
+    if sw in SHORT_WORDS or tw in SHORT_WORDS:
+        return False
+    if len(sw) >= 3 and len(tw) >= 3 and (sw.startswith(tw) or tw.startswith(sw)):
+        return True
+    return False
 
 
-def match_sentences(parsed_images, transcript_words):
+def get_meaningful(sentence_words):
+    meaningful = [w for w in sentence_words if len(w) >= 3 and w not in SHORT_WORDS]
+    if not meaningful:
+        meaningful = sentence_words
+    return meaningful
+
+
+def find_nearest_word(transcript_words, target_time, min_pos):
+    for pos in range(min_pos, len(transcript_words)):
+        if transcript_words[pos]["start"] >= target_time:
+            return pos
+    return len(transcript_words) - 1
+
+
+def find_first_match(sentence_words, transcript_words, start_pos, end_pos):
+    if not sentence_words or start_pos >= len(transcript_words):
+        return -1, -1
+    end_pos = min(end_pos, len(transcript_words))
+    meaningful = get_meaningful(sentence_words)
+    if not meaningful:
+        return -1, -1
+    for pos in range(start_pos, end_pos):
+        tw = n(transcript_words[pos]["word"])
+        for sw in meaningful:
+            if sw == tw or words_match(sw, tw):
+                window = max(len(meaningful) * 3, 10)
+                end = min(pos + window, len(transcript_words))
+                score = 0
+                for j in range(pos, end):
+                    tw2 = n(transcript_words[j]["word"])
+                    for sw2 in meaningful:
+                        if sw2 == tw2 or words_match(sw2, tw2):
+                            score += 1
+                            break
+                return pos, score
+    return -1, -1
+
+
+def match_sentences(parsed_images, transcript_words, audio_dur):
     n_images = len(parsed_images)
     n_words = len(transcript_words)
     positions = [0] * n_images
     scores = [0] * n_images
+    ti = 0
 
-    s0 = [n(w) for w in parsed_images[0][1].split() if n(w)]
-    if not s0:
-        s0 = ["x"]
-    bp, bs = find_best_position(s0, transcript_words, 0, min(n_words, 100))
-    positions[0] = bp
-    scores[0] = bs
-
-    for i in range(1, n_images):
-        prev_end = positions[i - 1] + len([n(w) for w in parsed_images[i - 1][1].split() if n(w)])
+    for i in range(n_images):
         s_words = [n(w) for w in parsed_images[i][1].split() if n(w)]
         if not s_words:
-            s_words = ["x"]
+            positions[i] = ti
+            scores[i] = 0
+            continue
 
-        margin = 50
-        search_start = max(0, prev_end - 20)
-        search_end = min(n_words, prev_end + margin + 1)
-        bp, bs = find_best_position(s_words, transcript_words, search_start, search_end)
+        meaningful = get_meaningful(s_words)
+        if not meaningful:
+            meaningful = s_words
 
-        if bp <= positions[i - 1]:
-            bp = positions[i - 1] + 1
-        if bs < 1:
-            margin2 = 200
-            search_end2 = min(n_words, prev_end + margin2 + 1)
-            bp2, bs2 = find_best_position(s_words, transcript_words, search_start, search_end2)
-            if bs2 > bs:
-                bp, bs = bp2, bs2
+        found = -1
+        score = 0
+        while ti < n_words:
+            tw = n(transcript_words[ti]["word"])
+            for sw in meaningful:
+                if sw == tw or words_match(sw, tw):
+                    found = ti
+                    score = 1
+                    remaining = [w for w in meaningful if w != sw]
+                    for j in range(ti + 1, min(ti + max(len(meaningful) * 3, 15), n_words)):
+                        tw2 = n(transcript_words[j]["word"])
+                        for rw in remaining[:]:
+                            if rw == tw2 or words_match(rw, tw2):
+                                score += 1
+                                remaining.remove(rw)
+                    break
+            if found >= 0:
+                break
+            ti += 1
 
-        bp = min(bp, n_words - 1)
-
-        positions[i] = bp
-        scores[i] = bs
+        if found >= 0:
+            positions[i] = found
+            scores[i] = score
+            ti = found + 1
+        else:
+            positions[i] = min(ti, n_words - 1)
+            scores[i] = 0
+            ti += 1
 
     return positions, scores
 
@@ -217,13 +257,13 @@ def main():
     parsed.sort(key=lambda x: x[0])
     print(f"Parsed {len(parsed)} images (sorted)")
 
+    audio_dur = get_audio_duration()
+
     print(f"\nMatching sentences to transcript positions...")
-    positions, scores = match_sentences(parsed, transcript)
+    positions, scores = match_sentences(parsed, transcript, audio_dur)
 
     nz = sum(1 for s in scores if s > 0)
     print(f"Match scores: min={min(scores):.1f}, max={max(scores):.1f}, avg={sum(scores)/len(scores):.1f}, nonzero={nz}/{len(scores)}")
-
-    audio_dur = get_audio_duration()
 
     timeline = []
     for i, (num, text, fname) in enumerate(parsed):
@@ -255,6 +295,26 @@ def main():
 
     if timeline:
         timeline[0]["start_time"] = 0.0
+
+    for i in range(1, len(timeline)):
+        prev = timeline[i - 1]
+        curr = timeline[i]
+        if curr["start_time"] <= prev["start_time"]:
+            curr["start_time"] = prev["end_time"]
+        if curr["end_time"] <= curr["start_time"]:
+            curr["end_time"] = min(curr["start_time"] + 0.5, audio_dur)
+        if prev["end_time"] > curr["start_time"]:
+            prev["end_time"] = curr["start_time"]
+
+    MIN_DUR = 1.0
+    for i in range(len(timeline)):
+        dur = timeline[i]["end_time"] - timeline[i]["start_time"]
+        if dur < MIN_DUR:
+            shortage = MIN_DUR - dur
+            new_end = min(timeline[i]["end_time"] + shortage, audio_dur)
+            timeline[i]["end_time"] = new_end
+            if i + 1 < len(timeline) and timeline[i + 1]["start_time"] < new_end:
+                timeline[i + 1]["start_time"] = new_end
 
     write_timeline(timeline, OUTPUT_FILE)
     write_debug_log(timeline, transcript, positions, scores)

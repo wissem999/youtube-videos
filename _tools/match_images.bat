@@ -20,5 +20,14 @@ if %errorlevel% neq 0 (
     echo ERROR: Matching failed.
     pause & exit /b 1
 )
+
+echo.
+echo ============================================
+echo  CHECKING SYNC...
+echo ============================================
+python "%~dp0check_sync.py"
+if %errorlevel% neq 0 (
+    echo WARNING: Sync check encountered errors.
+)
 echo.
 pause

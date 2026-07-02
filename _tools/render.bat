@@ -32,5 +32,14 @@ if %errorlevel% neq 0 (
 )
 
 for %%f in (output.mp4) do echo Output: %%f (%%~zf bytes)
+
+echo.
+echo ============================================
+echo  CHECKING SYNC...
+echo ============================================
+python "%~dp0check_sync.py"
+if %errorlevel% neq 0 (
+    echo WARNING: Sync check encountered errors.
+)
 echo.
 pause
